@@ -1,8 +1,13 @@
+import React from 'react';
 import { IconEye, IconMessageCircle } from '@tabler/icons-react';
 import { Card, Text, Group, Center, rem, useMantineTheme } from '@mantine/core';
 import classes from './ProjectCard.module.css';
 
-export function ProjectCard() {
+interface project {
+  src: string;
+}
+
+const ProjectCard: React.FC<project> = ({ src }) => {
   const theme = useMantineTheme();
 
   return (
@@ -15,13 +20,11 @@ export function ProjectCard() {
       href="https://mantine.dev/"
       target="_blank"
     >
-      <div
-        className={classes.image}
-        style={{
-          backgroundImage:
-            'url(https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80)',
-        }}
-      />
+  <div className={classes.image}>
+  <video id="background-video" autoPlay loop muted poster="">
+    <source src={src} type="video/mp4" />
+  </video>
+  </div>
       <div className={classes.overlay} />
 
       <div className={classes.content}>
@@ -62,4 +65,6 @@ export function ProjectCard() {
       </div>
     </Card>
   );
-}
+};
+
+export default ProjectCard;

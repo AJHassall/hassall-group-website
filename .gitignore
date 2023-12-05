@@ -124,3 +124,7 @@ web_modules/
 .DS_Store
 
 /out/*
+
+
+*.hot-update.js
+*.hot-update.json
