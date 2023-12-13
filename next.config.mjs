@@ -1,7 +1,7 @@
 import bundleAnalyzer from '@next/bundle-analyzer';
 
 const pathPrefix = process.env.NODE_ENV === 'production'
-  ? '/hassall-group-site/'
+  ? '/hassall-group-website/'
   : '';
 
 
