@@ -1,70 +1,33 @@
 import React from 'react';
-import { IconEye, IconMessageCircle } from '@tabler/icons-react';
-import { Card, Text, Group, Center, rem, useMantineTheme } from '@mantine/core';
+import { Card, Image, Text } from '@mantine/core';
 import classes from './ProjectCard.module.css';
 
-interface project {
-  src: string;
-}
-
-const ProjectCard: React.FC<project> = ({ src }) => {
-  const theme = useMantineTheme();
-
+function ProjectCard() {
   return (
     <Card
-      p="lg"
-      shadow="lg"
-      className={classes.card}
-      radius="md"
+      shadow="sm"
+      padding="xl"
       component="a"
-      href="https://mantine.dev/"
+      href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       target="_blank"
     >
-  <div className={classes.image}>
-  <video id="background-video" autoPlay loop muted poster="">
-    <source src={src} type="video/mp4" />
-  </video>
-  </div>
-      <div className={classes.overlay} />
+    <Card.Section>
+      <Image
+        src="https://images.unsplash.com/photo-1579227114347-15d08fc37cae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"
+        h={300}
+        alt="No way!"
+      />
+    </Card.Section>
 
-      <div className={classes.content}>
-        <div>
-          <Text size="lg" className={classes.title} fw={500}>
-            Journey to Swiss Alps
-          </Text>
+    <Text fw={500} size="lg" mt="md">
+      Project1
+    </Text>
 
-          <Group justify="space-between" gap="xs">
-            <Text size="sm" className={classes.author}>
-              Robert Gluesticker
-            </Text>
-
-            <Group gap="lg">
-              <Center>
-                <IconEye
-                  style={{ width: rem(16), height: rem(16) }}
-                  stroke={1.5}
-                  color={theme.colors.dark[2]}
-                />
-                <Text size="sm" className={classes.bodyText}>
-                  7847
-                </Text>
-              </Center>
-              <Center>
-                <IconMessageCircle
-                  style={{ width: rem(16), height: rem(16) }}
-                  stroke={1.5}
-                  color={theme.colors.dark[2]}
-                />
-                <Text size="sm" className={classes.bodyText}>
-                  5
-                </Text>
-              </Center>
-            </Group>
-          </Group>
-        </div>
-      </div>
+    <Text mt="xs" c="dimmed" size="sm">
+      PProject1
+    </Text>
     </Card>
-  );
-};
+);
+}
 
 export default ProjectCard;

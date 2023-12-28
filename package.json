@@ -29,6 +29,7 @@
     "react-dom": "18.2.0",
     "react-svg": "^16.1.31",
     "remove-leading-slash": "^1.0.1",
+    "webpack": "^5.0.0",
     "yarn": "^1.22.21"
   },
   "devDependencies": {

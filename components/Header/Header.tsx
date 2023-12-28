@@ -60,9 +60,9 @@ import * as core from '@mantine/core';
     // ));
 
     return (
-      <core.Box pb={120}>
+      <core.Box pb={150}>
         <header className={classes.header}>
-          <core.Group justify="space-between" h="100%">
+          <core.Group h="100%">
           <core.Image
             radius="md"
             src="logo.svg"
@@ -71,7 +71,13 @@ import * as core from '@mantine/core';
 
           />
 
-            <core.Group h="100%" gap={0} visibleFrom="sm">
+          <core.Text ml="100">
+            <h2>
+            Hassall Group Ltd
+            </h2>
+          </core.Text>
+
+            <core.Group h="100%" gap={0} visibleFrom="sm" ml="auto">
               <a href="#" className={classes.link}>
                 Home
               </a>
@@ -120,10 +126,10 @@ import * as core from '@mantine/core';
                 </HoverCard.Dropdown>
               </HoverCard> */}
               <a href="#" className={classes.link}>
-                Learn
+                Our Projects
               </a>
               <a href="#" className={classes.link}>
-                Academy
+                Contact Us
               </a>
             </core.Group>
 
