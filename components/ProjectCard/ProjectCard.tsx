@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, Image, Text } from '@mantine/core';
-import classes from './ProjectCard.module.css';
 
 function ProjectCard() {
   return (
