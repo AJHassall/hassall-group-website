@@ -3,6 +3,7 @@ import React from 'react';
 import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { theme } from '../theme';
 import { Header } from '../components/Header/Header';
+import { ContactUs } from '@/components/ContactUs/ContactUs';
 
 export const metadata = {
   title: 'Hassall Group Ltd',
@@ -25,6 +26,7 @@ export default function RootLayout({ children }: { children: any }) {
         <MantineProvider theme={theme}>
           <Header />
           {children}
+          <ContactUs />
         </MantineProvider>
       </body>
     </html>
