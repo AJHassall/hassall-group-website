@@ -1,0 +1,33 @@
+.price {
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+}
+
+.carousel {
+  @mixin hover {
+    .carouselControls {
+      opacity: 1;
+    }
+  }
+}
+
+.carouselControls {
+  transition: opacity 150ms ease;
+  opacity: 0;
+}
+
+.carouselIndicator {
+  width: rem(4px);
+  height: rem(4px);
+  transition: width 250ms ease;
+
+  &[data-active] {
+    width: rem(16px);
+  }
+}
+
+.carouselcard{
+    width: 100rem; /* Or a specific pixel value like 600px */
+    max-width: 1000px; /* Optional: Ensure it doesn't become too large */
+    height: 550px; /* Adjust the height as needed */
+  
+}

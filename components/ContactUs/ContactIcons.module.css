@@ -1,8 +1,10 @@
 .wrapper {
-    display: flex;
-    align-items: center;
-    color: var(--mantine-color-white);
-  }
+  display: flex; /* Activate Flexbox */
+  align-items: center; /* Vertically center icons and text */
+  gap: 1rem;  /* Add some spacing between elements */
+  color: var(--mantine-color-white);
+
+}
   
   .icon {
     margin-right: var(--mantine-spacing-md);
@@ -15,4 +17,8 @@
   
   .description {
     color: var(--mantine-color-white);
+  }
+
+  .flexContainer{
+    width: 100%;
   }

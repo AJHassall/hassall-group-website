@@ -1,33 +1,32 @@
-import '@mantine/core/styles.css';
-import React from 'react';
+import type { Metadata } from 'next';
 import { MantineProvider, ColorSchemeScript } from '@mantine/core';
-import { theme } from '../theme';
-import { Header } from '../components/Header/Header';
-import { ContactUs } from '@/components/ContactUs/ContactUs';
+import { NextAppDirEmotionCacheProvider } from 'tss-react/next/appDir';
+import { theme } from '@/lib/theme';
+import '@mantine/core/styles.css';
+import { ContactUs } from '@/components';
+import { Header } from '@/components/Header/Header';
+import '@mantine/carousel/styles.css';
 
-export const metadata = {
-  title: 'Hassall Group Ltd',
-  description: 'I am using Mantine with Next.js!',
+export const metadata: Metadata = {
+  title: 'Mantine V7 Nextjs 14 with TSS',
+  description:
+    'This repo can be used as a template for using Mantine V7 in a Nextjs 14 project with TSS for styling.',
 };
 
-export default function RootLayout({ children }: { children: any }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <head>
-        <ColorSchemeScript />
-        <link rel="shortcut icon" href="/favicon.svg" />
-        <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
-        />
+        <ColorSchemeScript defaultColorScheme='dark' />
       </head>
       <body>
-
-        <MantineProvider theme={theme}>
-          <Header />
-          {children}
-          <ContactUs />
-        </MantineProvider>
+        <NextAppDirEmotionCacheProvider options={{ key: 'css' }}>
+          <MantineProvider defaultColorScheme='light' theme={theme}>
+            <Header/>
+            {children}
+            <ContactUs/>
+          </MantineProvider>
+        </NextAppDirEmotionCacheProvider>
       </body>
     </html>
   );
