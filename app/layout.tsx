@@ -15,16 +15,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang='en'>
+    <html lang="en">
       <head>
-        <ColorSchemeScript defaultColorScheme='dark' />
+        <ColorSchemeScript defaultColorScheme="dark" />
       </head>
       <body>
         <NextAppDirEmotionCacheProvider options={{ key: 'css' }}>
-          <MantineProvider defaultColorScheme='light' theme={theme}>
-            <Header/>
+          <MantineProvider defaultColorScheme="light" theme={theme}>
+            <Header />
             {children}
-            <ContactUs/>
+            <ContactUs />
           </MantineProvider>
         </NextAppDirEmotionCacheProvider>
       </body>
