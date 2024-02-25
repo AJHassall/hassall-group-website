@@ -12,7 +12,7 @@ const withBundleAnalyzer = bundleAnalyzer({
 export default withBundleAnalyzer({
   reactStrictMode: false,
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: false,
   },
   experimental: {
     optimizePackageImports: ['@mantine/core', '@mantine/hooks'],

@@ -2,3 +2,5 @@
 *.mjs
 *.js
 out/*
+
+lib/theme/index.d.ts
