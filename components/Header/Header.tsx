@@ -13,7 +13,6 @@ import {
 import { useDisclosure } from '@mantine/hooks';
 import classes from './header.module.css';
 import { Logo } from '../Logo/Logo';
-import createPrefixedLink from '@/app/Helpers/LinkUtils';
 
 export function Header() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
