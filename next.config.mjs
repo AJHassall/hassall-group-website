@@ -19,8 +19,8 @@ export default withBundleAnalyzer({
   },
   output: 'export',
   assetPrefix: pathPrefix,
-  // env: {
-  //   pathPrefix,
-  // },
+  env: {
+    pathPrefix,
+  },
   
 });

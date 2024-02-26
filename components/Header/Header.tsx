@@ -24,13 +24,13 @@ export function Header() {
           <Logo />
 
           <Group h="100%" gap={0} visibleFrom="sm">
-            <Link href={createPrefixedLink('AboutUs')} className={classes.link}>
+            <Link href="/AboutUs" className={classes.link}>
               About Us
             </Link>
-            <Link href={createPrefixedLink('OurProjects')} className={classes.link}>
+            <Link href="/OurProjects" className={classes.link}>
               Our Projects
             </Link>
-            <Link href={createPrefixedLink('OurServices')} className={classes.link}>
+            <Link href="/Services" className={classes.link}>
               Our Services
             </Link>
           </Group>
