@@ -128,3 +128,4 @@ web_modules/
 
 *.hot-update.js
 *.hot-update.json
+.next/

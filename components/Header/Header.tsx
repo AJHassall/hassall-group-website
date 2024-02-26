@@ -13,10 +13,10 @@ import {
 import { useDisclosure } from '@mantine/hooks';
 import classes from './header.module.css';
 import { Logo } from '../Logo/Logo';
+import createPrefixedLink from '@/app/Helpers/LinkUtils';
 
 export function Header() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
-
   return (
     <Box pb={120}>
       <header className={classes.header}>
@@ -24,13 +24,13 @@ export function Header() {
           <Logo />
 
           <Group h="100%" gap={0} visibleFrom="sm">
-            <Link href="/AboutUs" className={classes.link}>
+            <Link href={createPrefixedLink('AboutUs')} className={classes.link}>
               About Us
             </Link>
-            <Link href="/OurProjects" className={classes.link}>
+            <Link href={createPrefixedLink('OurProjects')} className={classes.link}>
               Our Projects
             </Link>
-            <Link href="/Services" className={classes.link}>
+            <Link href={createPrefixedLink('OurServices')} className={classes.link}>
               Our Services
             </Link>
           </Group>
