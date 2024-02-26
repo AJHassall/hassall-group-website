@@ -17,10 +17,12 @@ import { Logo } from '../Logo/Logo';
 export function Header() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
   return (
-    <Box pb={120}>
+    <Box>
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
-          <Logo />
+          <Link href="/" className={classes.link}>
+            <Logo />
+          </Link>
 
           <Group h="100%" gap={0} visibleFrom="sm">
             <Link href="/AboutUs" className={classes.link}>

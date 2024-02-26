@@ -1,5 +1,6 @@
-import { Image, Card } from '@mantine/core';
+import { Image, Card, Text, Group, Button, rem } from '@mantine/core';
 import { Carousel } from '@mantine/carousel';
+import { IconStar } from '@tabler/icons-react';
 import classes from './CarouselCard.module.css';
 
 const images = [
@@ -13,12 +14,12 @@ const images = [
 export function CarouselCard() {
   const slides = images.map((image) => (
     <Carousel.Slide key={image}>
-      <Image src={image} height={400} />
+      <Image src={image} height={420} />
     </Carousel.Slide>
   ));
 
   return (
-    <Card className={classes.carouselcard} radius="md" withBorder padding="xl">
+    <Card radius="md" withBorder padding="xl">
       <Card.Section>
         <Carousel
           withIndicators
@@ -33,6 +34,21 @@ export function CarouselCard() {
         </Carousel>
       </Card.Section>
 
+      <Group justify="space-between" mt="lg">
+        <Text fw={500} fz="lg">
+          Project
+        </Text>
+
+      </Group>
+
+      <Text fz="sm" c="dimmed" mt="sm">
+        Project Details
+      </Text>
+
+      <Group justify="flex-end" mt="md">
+
+        <Button radius="md">View More</Button>
+      </Group>
     </Card>
   );
 }

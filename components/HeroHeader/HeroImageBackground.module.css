@@ -1,6 +1,6 @@
 .wrapper {
     position: relative;
-    padding-top: rem(180px);
+    padding-top: rem(300px);
     padding-bottom: rem(130px);
     background-image: url("../../public/content/kitchen.jpg");
     background-size: cover;
