@@ -1,7 +1,7 @@
 import bundleAnalyzer from '@next/bundle-analyzer';
 
 const pathPrefix = process.env.NODE_ENV === 'production'
-  ? '/hassall-group-website/'
+  ? '/hassall-group-website'
   : '';
 
 
@@ -19,6 +19,7 @@ export default withBundleAnalyzer({
   },
   output: 'export',
   assetPrefix: pathPrefix,
+  basePath: pathPrefix,
   env: {
     pathPrefix,
   },

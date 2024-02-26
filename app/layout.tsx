@@ -8,9 +8,8 @@ import { Header } from '@/components/Header/Header';
 import '@mantine/carousel/styles.css';
 
 export const metadata: Metadata = {
-  title: 'Mantine V7 Nextjs 14 with TSS',
-  description:
-    'This repo can be used as a template for using Mantine V7 in a Nextjs 14 project with TSS for styling.',
+  title: 'Hassall-Group-Ltd',
+  description: '',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
