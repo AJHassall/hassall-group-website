@@ -1,4 +1,5 @@
-'use client'
+'use client';
+
 import { useState } from 'react';
 import { TextInput, PasswordInput, Tooltip, Center, Text, rem } from '@mantine/core';
 import { IconInfoCircle } from '@tabler/icons-react';

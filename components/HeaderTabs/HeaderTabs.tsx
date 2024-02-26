@@ -1,4 +1,5 @@
-'use client'
+'use client';
+
 import cx from 'clsx';
 import { useState } from 'react';
 import {

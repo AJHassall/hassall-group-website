@@ -1,4 +1,5 @@
-'use client'
+'use client';
+
 import { useState } from 'react';
 import { SegmentedControl, Text } from '@mantine/core';
 import {

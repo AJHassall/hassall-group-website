@@ -1,4 +1,5 @@
-'use client'
+'use client';
+
 import { useState } from 'react';
 import { Container, Anchor, Group, Burger, Box } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';

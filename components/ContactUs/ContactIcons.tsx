@@ -1,4 +1,4 @@
-import { Text, Box, Stack, rem, SimpleGrid, Flex } from '@mantine/core';
+import { Text, Box, rem, Flex } from '@mantine/core';
 import { IconSun, IconPhone, IconMapPin, IconAt } from '@tabler/icons-react';
 import classes from './ContactIcons.module.css';
 
@@ -34,17 +34,15 @@ const MOCKDATA = [
 
 export function ContactIconsList() {
   const items = MOCKDATA.map((item, index) => <ContactIcon key={index} {...item} />);
-  return     <Flex className={classes.flexContainer}
-              
-              
-                mih={50}
-          
-                gap="xl"
-                justify="center"
-                align="center"
-                direction="row"
-                wrap="wrap"
-              >
+  return <Flex
+    className={classes.flexContainer}
+    mih={50}
+    gap="xl"
+    justify="center"
+    align="center"
+    direction="row"
+    wrap="wrap"
+  >
     {items}
-    </Flex>;
+         </Flex>;
 }

@@ -1,4 +1,5 @@
-'use client'
+'use client';
+
 import { useState } from 'react';
 import { NumberInput, Slider } from '@mantine/core';
 import classes from './SliderInput.module.css';

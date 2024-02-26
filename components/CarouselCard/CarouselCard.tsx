@@ -1,6 +1,5 @@
-import { Image, Card, Text, Group, Button, rem } from '@mantine/core';
+import { Image, Card } from '@mantine/core';
 import { Carousel } from '@mantine/carousel';
-import { IconStar } from '@tabler/icons-react';
 import classes from './CarouselCard.module.css';
 
 const images = [
@@ -33,7 +32,6 @@ export function CarouselCard() {
           {slides}
         </Carousel>
       </Card.Section>
-
 
     </Card>
   );

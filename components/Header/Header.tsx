@@ -9,7 +9,6 @@ import {
   Drawer,
   ScrollArea,
   rem,
-  useMantineTheme,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import classes from './header.module.css';
@@ -19,7 +18,7 @@ export function Header() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
 
   return (
-    <Box>
+    <Box pb={120}>
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
           <Logo />

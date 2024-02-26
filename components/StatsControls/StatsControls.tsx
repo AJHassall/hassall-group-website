@@ -1,4 +1,5 @@
-'use client'
+'use client';
+
 import { useState } from 'react';
 import dayjs from 'dayjs';
 import { UnstyledButton, Text, Paper, Group, rem } from '@mantine/core';

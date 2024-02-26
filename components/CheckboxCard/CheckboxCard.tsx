@@ -1,4 +1,5 @@
-'use client'
+'use client';
+
 import { useState } from 'react';
 import { UnstyledButton, Checkbox, Text } from '@mantine/core';
 import classes from './CheckboxCard.module.css';

@@ -1,5 +1,4 @@
 import { Center, Text, TypographyStylesProvider } from '@mantine/core';
-import { StatsGroup } from '@/components/StatsGroup/StatusGroup';
 
 export default function AboutUs() {
     return (

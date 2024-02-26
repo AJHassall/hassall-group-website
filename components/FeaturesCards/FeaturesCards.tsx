@@ -7,7 +7,6 @@ import {
   SimpleGrid,
   Container,
   rem,
-  useMantineTheme,
 } from '@mantine/core';
 import { IconGauge, IconUser, IconCookie } from '@tabler/icons-react';
 import classes from './FeaturesCards.module.css';
@@ -39,7 +38,7 @@ export function FeaturesCards() {
       <feature.icon
         style={{ width: rem(50), height: rem(50) }}
         stroke={2}
-        color={'blue'}
+        color="blue"
       />
       <Text fz="lg" fw={500} className={classes.cardTitle} mt="md">
         {feature.title}
