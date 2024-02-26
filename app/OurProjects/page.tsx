@@ -1,6 +1,6 @@
 'use client';
 
-import { Center, Container, Flex, Stack, Text} from '@mantine/core';
+import { Center, Container, Text } from '@mantine/core';
 import { CarouselCard } from '@/components';
 
 export default function AboutUs() {
