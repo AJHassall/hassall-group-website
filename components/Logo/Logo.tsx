@@ -1,12 +1,14 @@
 import Image from 'next/image';
 
 export function Logo() {
+  const assetDomain = process.env.pathPrefix;
+
   return (
     <Image
-      src="/logo.svg"
+      src={`${assetDomain}/logo.svg`}
       width={64}
       height={64}
-      alt="Picture of the author"
+      alt="Company logo"
       priority
     />
   );

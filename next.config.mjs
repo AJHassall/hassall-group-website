@@ -20,6 +20,7 @@ export default withBundleAnalyzer({
   output: 'export',
   assetPrefix: pathPrefix,
   basePath: pathPrefix,
+
   env: {
     pathPrefix,
   },
