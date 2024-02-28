@@ -8,9 +8,8 @@ export default function LoftConversions() {
 
     <>
         <Container>
-
         <Center>
-            <Title order={2}><h1>Loft Conversions</h1></Title>
+            <Title order={2}>Loft Conversions</Title>
         </Center>
         <Image
           src="/content/kitchen.jpg"
