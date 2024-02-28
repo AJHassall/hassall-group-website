@@ -1,11 +1,13 @@
-import { HeroImageBackground } from '@/components/HeroHeader/HeroImageBackground';
 import { FeaturesCards } from '@/components/FeaturesCards/FeaturesCards';
+import CarouselHeroHeader from '@/components/CarouselHeroHeader/CarouselHeroHeader';
+import { ArticlesCardsGrid } from '@/components';
 
 export default function HomePage() {
   return (
     <>
-      <HeroImageBackground />
+      <CarouselHeroHeader />
       <FeaturesCards />
+      <ArticlesCardsGrid />
     </>
   );
 }

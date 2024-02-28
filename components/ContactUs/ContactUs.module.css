@@ -11,6 +11,8 @@
   @media (max-width: $mantine-breakpoint-sm) {
     padding: calc(var(--mantine-spacing-xl) * 1.5);
   }
+
+  margin-top: auto;
 }
 
 .title {

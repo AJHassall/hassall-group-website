@@ -9,6 +9,8 @@ import {
   Drawer,
   ScrollArea,
   rem,
+  Menu,
+  Button,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import classes from './header.module.css';
@@ -31,9 +33,33 @@ export function Header() {
             <Link href="/OurProjects" className={classes.link}>
               Our Projects
             </Link>
-            <Link href="/Services" className={classes.link}>
-              Our Services
-            </Link>
+            <Menu>
+              <Menu.Target>
+                <Button>Toggle menu</Button>
+              </Menu.Target>
+              <Menu.Dropdown>
+                <Menu.Item>
+                  <Link href="/Services/KitchenRenovations" className={classes.link}>
+                  Kitchen Renovations
+                  </Link>
+                </Menu.Item>
+                <Menu.Item>
+                  <Link href="/Services/LoftExtensions" className={classes.link}>
+                  Loft Extensions
+                  </Link>
+                </Menu.Item>
+                <Menu.Item>
+                  <Link href="/Services/Roofing" className={classes.link}>
+                  Roofing
+                  </Link>
+                </Menu.Item>
+                <Menu.Item>
+                  <Link href="/Services/Etc" className={classes.link}>
+                  Etc
+                  </Link>
+                </Menu.Item>
+              </Menu.Dropdown>
+            </Menu>
           </Group>
 
           <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
@@ -57,9 +83,28 @@ export function Header() {
             <Link href="/OurProjects" className={classes.link}>
               Our Projects
             </Link>
-            <Link href="/Services" className={classes.link}>
-              Our Services
-            </Link>
+            <Menu>
+              <Menu.Item>
+                <Link href="/Services/KitchenRenovations" className={classes.link}>
+                Kitchen Renovations
+                </Link>
+              </Menu.Item>
+              <Menu.Item>
+                <Link href="/Services/LoftExtensions" className={classes.link}>
+                Loft Extensions
+                </Link>
+              </Menu.Item>
+              <Menu.Item>
+                <Link href="/Services/Roofing" className={classes.link}>
+                Roofing
+                </Link>
+              </Menu.Item>
+              <Menu.Item>
+                <Link href="/Services/Etc" className={classes.link}>
+                Etc
+                </Link>
+              </Menu.Item>
+            </Menu>
         </ScrollArea>
       </Drawer>
     </Box>

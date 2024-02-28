@@ -8,27 +8,27 @@ import {
   Container,
   rem,
 } from '@mantine/core';
-import { IconGauge, IconUser, IconCookie } from '@tabler/icons-react';
+import { IconBuildingSkyscraper, IconShieldCheck, IconToolsKitchen2 } from '@tabler/icons-react';
 import classes from './FeaturesCards.module.css';
 
 const mockdata = [
   {
-    title: 'Extreme performance',
+    title: 'Quality Craftsmanship',
     description:
-      'This dust is actually a powerful poison that will even make a pro wrestler sick, Regice cloaks itself with frigid air of -328 degrees Fahrenheit',
-    icon: IconGauge,
+      'Our skilled team takes pride in meticulous attention to detail, delivering projects that reflect superior workmanship and enduring quality.',
+    icon: IconToolsKitchen2,
   },
   {
-    title: 'Privacy focused',
+    title: 'Client-Focused',
     description:
-      'People say it can run at the same speed as lightning striking, Its icy body is so cold, it will not melt even if it is immersed in magma',
-    icon: IconUser,
+      'We prioritize open communication and collaboration, ensuring your vision guides the process and your needs are met at every stage.',
+    icon: IconShieldCheck,
   },
   {
-    title: 'No third parties',
+    title: 'Timely & Efficient',
     description:
-      'They’re popular, but they’re rare. Trainers who show them off recklessly may be targeted by thieves',
-    icon: IconCookie,
+      'With streamlined processes and a commitment to deadlines, we strive to complete projects on time and within budget.',
+    icon: IconBuildingSkyscraper,
   },
 ];
 
@@ -53,18 +53,17 @@ export function FeaturesCards() {
     <Container size="lg" py="xl">
       <Group justify="center">
         <Badge variant="filled" size="lg">
-          Best company ever
+          Hassall Group Ltd
         </Badge>
       </Group>
 
       <Title order={2} className={classes.title} ta="center" mt="sm">
-        Integrate effortlessly with any technology stack
+        Your Trusted Building Partner
       </Title>
 
-      <Text c="dimmed" className={classes.description} ta="center" mt="md">
-        Every once in a while, you’ll see a Golbat that’s missing some fangs. This happens when
-        hunger drives it to try biting a Steel-type Pokémon.
-      </Text>
+    <Text c="dimmed" className={classes.description} ta="center" mt="md">
+      With [number] years of experience, we deliver  projects that stand the test of time.
+    </Text>
 
       <SimpleGrid cols={{ base: 1, md: 3 }} spacing="xl" mt={50}>
         {features}
