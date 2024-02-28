@@ -7,13 +7,14 @@ export default function LoftConversions() {
   return (
 
     <>
-        <Container>
+        <Container p={10}>
         <Center>
-            <Title order={2}>Loft Conversions</Title>
+            <Title order={2}>Roofing</Title>
         </Center>
         <Image
           src="/content/kitchen.jpg"
           h={400}
+          w={1000}
         />
 
         <FaqSimple />

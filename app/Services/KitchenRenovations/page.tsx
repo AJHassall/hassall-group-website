@@ -14,6 +14,7 @@ export default function LoftConversions() {
         <Image
           src="/content/kitchen.jpg"
           h={400}
+          w={1000}
         />
 
         <FaqSimple />

@@ -44,8 +44,8 @@ export function Header() {
                   </Link>
                 </Menu.Item>
                 <Menu.Item>
-                  <Link href="/Services/LoftExtensions" className={classes.link}>
-                  Loft Extensions
+                  <Link href="/Services/LoftConversions" className={classes.link}>
+                  Loft Conversions
                   </Link>
                 </Menu.Item>
                 <Menu.Item>
@@ -90,8 +90,8 @@ export function Header() {
                 </Link>
               </Menu.Item>
               <Menu.Item>
-                <Link href="/Services/LoftExtensions" className={classes.link}>
-                Loft Extensions
+                <Link href="/Services/LoftConversions" className={classes.link}>
+                Loft Conversions
                 </Link>
               </Menu.Item>
               <Menu.Item>
