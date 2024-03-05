@@ -1,4 +1,4 @@
-import { Center, Text, TypographyStylesProvider } from '@mantine/core';
+import { Center, Text, TypographyStylesProvider, Container } from '@mantine/core';
 
 export default function AboutUs() {
     return (
@@ -8,7 +8,9 @@ export default function AboutUs() {
             <Text component="div"><h1>About Us</h1></Text>
             </Center>
         </div>
+          <Container>
         <Text component="div" pl="5rem" pr="5rem">
+
           <TypographyStylesProvider>
             <h3>Line clamp with TypographyStylesProvider</h3>
             <p>
@@ -56,6 +58,7 @@ export default function AboutUs() {
             </p>
           </TypographyStylesProvider>
         </Text>
+          </Container>
         </>
       );
 }

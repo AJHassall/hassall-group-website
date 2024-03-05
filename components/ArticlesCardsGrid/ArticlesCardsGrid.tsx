@@ -5,25 +5,37 @@ const mockdata = [
   {
     title: 'Loft conversions',
     image:
-      'https://images.unsplash.com/photo-1527004013197-933c4bb611b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
+      '/content/loftconversions/loft_conversion (6).jpg',
     date: 'August 18, 2022',
   },
   {
     title: 'Extensions',
     image:
-      'https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
+      '/content/extensions/extension (1).jpg',
     date: 'August 27, 2022',
   },
   {
     title: 'Kitchen renovation',
     image:
-      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
+      'content/kitchens/kitchen_renovation (1).jpg',
     date: 'September 9, 2022',
   },
   {
-    title: 'ETC',
+    title: 'Fencing',
     image:
-      'https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
+      '/content/fencing/Fencing (2).jpg',
+    date: 'September 12, 2022',
+  },
+  {
+    title: 'Patios',
+    image:
+      '/content/patios/Patios (2).jpg',
+    date: 'September 12, 2022',
+  },
+  {
+    title: 'Roofing',
+    image:
+      '/content/roofing/roofing (2).jpg',
     date: 'September 12, 2022',
   },
 ];
@@ -45,7 +57,7 @@ export function ArticlesCardsGrid() {
 
   return (
     <Container size="lg" w="100%">
-      <SimpleGrid cols={{ base: 1, sm: 2 }}>{cards}</SimpleGrid>
+      <SimpleGrid cols={{ base: 1, sm: 3 }}>{cards}</SimpleGrid>
     </Container>
   );
 }

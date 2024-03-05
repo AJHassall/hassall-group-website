@@ -5,11 +5,10 @@ export function Logo() {
 
   return (
     <Image
-      src={`${assetDomain}/logo.svg`}
-      width={64}
-      height={64}
+      src={`${assetDomain}/hassall90x50 no background.png`}
+      width={270}
+      height={150}
       alt="Company logo"
-      priority
     />
   );
 }

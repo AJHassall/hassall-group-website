@@ -54,8 +54,18 @@ export function Header() {
                   </Link>
                 </Menu.Item>
                 <Menu.Item>
-                  <Link href="/Services/Etc" className={classes.link}>
-                  Etc
+                  <Link href="/Services/Fencing" className={classes.link}>
+                  Fencing
+                  </Link>
+                </Menu.Item>
+                <Menu.Item>
+                  <Link href="/Services/Patios" className={classes.link}>
+                  Patios
+                  </Link>
+                </Menu.Item>
+                <Menu.Item>
+                  <Link href="/Services/BathroomsAndKitchens" className={classes.link}>
+                  Bathrooms and Kitchens
                   </Link>
                 </Menu.Item>
               </Menu.Dropdown>
@@ -83,28 +93,38 @@ export function Header() {
             <Link href="/OurProjects" className={classes.link}>
               Our Projects
             </Link>
-            <Menu>
-              <Menu.Item>
-                <Link href="/Services/KitchenRenovations" className={classes.link}>
-                Kitchen Renovations
-                </Link>
-              </Menu.Item>
-              <Menu.Item>
-                <Link href="/Services/LoftConversions" className={classes.link}>
-                Loft Conversions
-                </Link>
-              </Menu.Item>
-              <Menu.Item>
-                <Link href="/Services/Roofing" className={classes.link}>
-                Roofing
-                </Link>
-              </Menu.Item>
-              <Menu.Item>
-                <Link href="/Services/Etc" className={classes.link}>
-                Etc
-                </Link>
-              </Menu.Item>
-            </Menu>
+            <Menu.Dropdown>
+                <Menu.Item>
+                  <Link href="/Services/KitchenRenovations" className={classes.link}>
+                  Kitchen Renovations
+                  </Link>
+                </Menu.Item>
+                <Menu.Item>
+                  <Link href="/Services/LoftConversions" className={classes.link}>
+                  Loft Conversions
+                  </Link>
+                </Menu.Item>
+                <Menu.Item>
+                  <Link href="/Services/Roofing" className={classes.link}>
+                  Roofing
+                  </Link>
+                </Menu.Item>
+                <Menu.Item>
+                  <Link href="/Services/Fencing" className={classes.link}>
+                  Fencing
+                  </Link>
+                </Menu.Item>
+                <Menu.Item>
+                  <Link href="/Services/Patios" className={classes.link}>
+                  Patios
+                  </Link>
+                </Menu.Item>
+                <Menu.Item>
+                  <Link href="/Services/BathroomsAndKitchens" className={classes.link}>
+                  Bathrooms and Kitchens
+                  </Link>
+                </Menu.Item>
+            </Menu.Dropdown>
         </ScrollArea>
       </Drawer>
     </Box>
