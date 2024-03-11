@@ -3,5 +3,9 @@
 import { createTheme } from '@mantine/core';
 
 export const theme = createTheme({
-  /* Put your mantine theme override here */
+  colors: {
+    lightBlue: ['#0190b8', '#0190b8', '#0190b8', '#0190b8', '#0190b8', '#0190b8', '#0190b8', '#0190b8', '#0190b8', '#0190b8'],
+    darkBlue: ['#3b4c77', '#3b4c77', '#3b4c77', '#3b4c77', '#3b4c77', '#3b4c77', '#3b4c77', '#3b4c77', '#3b4c77', '#3b4c77'],
+    grey: ['#919fa4', '#919fa4', '#919fa4', '#919fa4', '#919fa4', '#919fa4', '#919fa4', '#919fa4', '#919fa4', '#919fa4'],
+  },
 });

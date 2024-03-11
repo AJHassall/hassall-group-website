@@ -27,6 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <ContactUs />
           </MantineProvider>
         </NextAppDirEmotionCacheProvider>
+
       </body>
     </html>
   );

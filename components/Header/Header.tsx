@@ -30,12 +30,9 @@ export function Header() {
             <Link href="/AboutUs" className={classes.link}>
               About Us
             </Link>
-            <Link href="/OurProjects" className={classes.link}>
-              Our Projects
-            </Link>
             <Menu>
               <Menu.Target>
-                <Button>Toggle menu</Button>
+                <Button color="#0190b8">Our Services</Button>
               </Menu.Target>
               <Menu.Dropdown>
                 <Menu.Item>

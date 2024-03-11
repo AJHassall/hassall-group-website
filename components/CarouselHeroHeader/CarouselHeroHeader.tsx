@@ -6,12 +6,16 @@ import { Carousel } from '@mantine/carousel';
 import { Container, Image, Text, Title } from '@mantine/core';
 import classes from './CarouselHeroHeader.module.css';
 
+import roof from '@/public/content/roofing/roofing (2).jpg';
+import bathroom from '@/public/content/bathrooms/Bathroom (3).jpg';
+import extension from '@/public/content/extensions/extension (1).jpg';
+import loftconversion from '@/public/content/loftconversions/loft_conversion (3).jpg';
+
 const images = [
-    'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
-    'https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
-    'https://images.unsplash.com/photo-1605774337664-7a846e9cdf17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
-    'https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
-    'https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
+        roof.src,
+        bathroom.src,
+        extension.src,
+        loftconversion.src,
     ];
 
 function CarouselHeroHeader() {
@@ -38,7 +42,7 @@ function CarouselHeroHeader() {
 
     </Carousel>
 
-      <Container bg="white" className={classes.textContainer}>
+      <Container m={0} p={0} w="100%" bg="white" className={classes.textContainer}>
           <Title order={2} c="black" fw={700}>Specialist Builders Essex and Canvey</Title>
           <Text> Call now on 00000-000000  </Text>
       </Container>

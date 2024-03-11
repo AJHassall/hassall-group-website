@@ -1,41 +1,42 @@
 import { SimpleGrid, Card, Image, Text, Container, AspectRatio } from '@mantine/core';
 import classes from './ArticlesCardsGrid.module.css';
 
+import loftconversion from '@/public/content/loftconversions/loft_conversion (1).jpg';
+import extension from '@/public/content/extensions/extension (1).jpg';
+import kitchen from '@/public/content/kitchens/kitchen_renovation (1).jpg';
+import fencing from '@/public/content/fencing/Fencing (1).jpg';
+import patio from '@/public/content//patios/Patios (1).jpg';
+import roof from '@/public/content/roofing/roofing (1).jpg';
+
 const mockdata = [
   {
     title: 'Loft conversions',
-    image:
-      '/content/loftconversions/loft_conversion (6).jpg',
+    image: loftconversion.src,
     date: 'August 18, 2022',
   },
   {
     title: 'Extensions',
-    image:
-      '/content/extensions/extension (1).jpg',
+    image: extension.src,
     date: 'August 27, 2022',
   },
   {
     title: 'Kitchen renovation',
-    image:
-      'content/kitchens/kitchen_renovation (1).jpg',
+    image: kitchen.src,
     date: 'September 9, 2022',
   },
   {
     title: 'Fencing',
-    image:
-      '/content/fencing/Fencing (2).jpg',
+    image: fencing.src,
     date: 'September 12, 2022',
   },
   {
     title: 'Patios',
-    image:
-      '/content/patios/Patios (2).jpg',
+    image: patio.src,
     date: 'September 12, 2022',
   },
   {
     title: 'Roofing',
-    image:
-      '/content/roofing/roofing (2).jpg',
+    image: roof.src,
     date: 'September 12, 2022',
   },
 ];
