@@ -2,6 +2,9 @@
   "name": "hassall-group-website",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=18.17.0" 
+  },
   "scripts": {
     "dev": "next dev",
     "build": "set NODE_ENV=production && next build ",
