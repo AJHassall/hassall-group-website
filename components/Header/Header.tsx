@@ -11,28 +11,35 @@ import {
   rem,
   Menu,
   Button,
+  Stack,
 } from '@mantine/core';
+import { IconChevronDown } from '@tabler/icons-react';
 import { useDisclosure } from '@mantine/hooks';
 import classes from './header.module.css';
 import { Logo } from '../Logo/Logo';
+import { ContactIconsList } from './ContactIcons';
 
 export function Header() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
   return (
     <Box>
       <header className={classes.header}>
+
         <Group justify="space-between" h="100%">
           <Link href="/" className={classes.link}>
             <Logo />
           </Link>
+          <Stack>
 
-          <Group h="100%" gap={0} visibleFrom="sm">
-            <Link href="/AboutUs" className={classes.link}>
-              About Us
+          <ContactIconsList />
+          <Divider />
+          <Group justify="flex-end" h="100%" gap={0} visibleFrom="sm">
+            <Link href="/ContactUs" className={classes.link}>
+              Contact Us
             </Link>
             <Menu>
               <Menu.Target>
-                <Button color="#0190b8">Our Services</Button>
+                <Button color="#0190b8">Our Services <IconChevronDown /></Button>
               </Menu.Target>
               <Menu.Dropdown>
                 <Menu.Item>
@@ -68,6 +75,7 @@ export function Header() {
               </Menu.Dropdown>
             </Menu>
           </Group>
+          </Stack>
 
           <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
         </Group>
@@ -90,7 +98,11 @@ export function Header() {
             <Link href="/OurProjects" className={classes.link}>
               Our Projects
             </Link>
-            <Menu.Dropdown>
+            <Menu>
+              <Menu.Target>
+                <Button color="#0190b8">Our Services</Button>
+              </Menu.Target>
+              <Menu.Dropdown>
                 <Menu.Item>
                   <Link href="/Services/KitchenRenovations" className={classes.link}>
                   Kitchen Renovations
@@ -117,11 +129,12 @@ export function Header() {
                   </Link>
                 </Menu.Item>
                 <Menu.Item>
-                  <Link href="/Services/BathroomsAndKitchens" className={classes.link}>
-                  Bathrooms and Kitchens
+                  <Link href="/Services/Bathrooms" className={classes.link}>
+                  Bathrooms
                   </Link>
                 </Menu.Item>
-            </Menu.Dropdown>
+              </Menu.Dropdown>
+            </Menu>
         </ScrollArea>
       </Drawer>
     </Box>

@@ -18,7 +18,7 @@ const GalleryPage = () => {
 
   useEffect(() => {
     const fetchImages = async () => {
-      const response = await fetchWithBaseUrl('/api/patios');
+      const response = await fetchWithBaseUrl('/api/roofing');
       const data = await response.json();
       setImages(data);
 
@@ -41,12 +41,12 @@ const GalleryPage = () => {
     <>
     <Stack>
       <div style={{ textAlign: 'center' }}>
-        <Title c="darkBlue" m={20}>Patios</Title>
+        <Title c="darkBlue" m={20}>Roofing</Title>
       </div>
       <Container>
-        <Text m={10}>Enhance your outdoor experience with a beautiful patio.
-         We offer quality craftsmanship, durable materials, and designs that create a perfect
-        space for enjoying the weather, dining al fresco, and making memories with loved ones.
+        <Text m={10}>Protect your biggest investment with a quality roof.
+         We offer expert craftsmanship, long-lasting materials,
+         and superior weatherproofing to ensure your home stays safe and dry for years to come.
         </Text>
       </Container>
 

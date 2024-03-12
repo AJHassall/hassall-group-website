@@ -18,7 +18,7 @@ const GalleryPage = () => {
 
   useEffect(() => {
     const fetchImages = async () => {
-      const response = await fetchWithBaseUrl('/api/patios');
+      const response = await fetchWithBaseUrl('/api/fencing');
       const data = await response.json();
       setImages(data);
 
@@ -41,12 +41,13 @@ const GalleryPage = () => {
     <>
     <Stack>
       <div style={{ textAlign: 'center' }}>
-        <Title c="darkBlue" m={20}>Patios</Title>
+        <Title c="darkBlue" m={20}>Fencing</Title>
       </div>
       <Container>
-        <Text m={10}>Enhance your outdoor experience with a beautiful patio.
-         We offer quality craftsmanship, durable materials, and designs that create a perfect
-        space for enjoying the weather, dining al fresco, and making memories with loved ones.
+        <Text m={10}>Define your outdoor living space with a beautiful fence.
+        We offer quality craftsmanship, durable materials, and a variety of styles to
+        enhance your gardens&apos;s aesthetic and
+        increase the value of your property.
         </Text>
       </Container>
 

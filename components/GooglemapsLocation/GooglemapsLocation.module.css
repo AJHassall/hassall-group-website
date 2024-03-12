@@ -1,3 +1,15 @@
 .location{
-    width: 100vw;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+}
+
+.locationOverlay {  
+  position: absolute; /* Or 'fixed' if needed */
+  top: 0;
+  left: 0;
+  width: 640px; /* Match iframe width */
+  height: 50px;  /* Height of the area to hide   */
+  background-color: white;  /* Match your page background */
 }

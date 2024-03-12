@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import { Image } from '@mantine/core';
 
 export function Logo() {
   const assetDomain = process.env.pathPrefix;
@@ -6,8 +6,8 @@ export function Logo() {
   return (
     <Image
       src={`${assetDomain}/hassall90x50 no background.png`}
-      width={270}
-      height={150}
+      w="15rem"
+      height="auto"
       alt="Company logo"
     />
   );

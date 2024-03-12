@@ -18,7 +18,7 @@ const mockdata = [
   },
   {
     title: 'Extensions',
-    href: 'Services/Extenions',
+    href: 'Services/Extensions',
     image: extension.src,
     date: 'August 27, 2022',
   },

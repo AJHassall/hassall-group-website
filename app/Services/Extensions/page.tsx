@@ -18,7 +18,7 @@ const GalleryPage = () => {
 
   useEffect(() => {
     const fetchImages = async () => {
-      const response = await fetchWithBaseUrl('/api/patios');
+      const response = await fetchWithBaseUrl('/api/extensions');
       const data = await response.json();
       setImages(data);
 
@@ -41,12 +41,13 @@ const GalleryPage = () => {
     <>
     <Stack>
       <div style={{ textAlign: 'center' }}>
-        <Title c="darkBlue" m={20}>Patios</Title>
+        <Title c="darkBlue" m={20}>Extensions</Title>
       </div>
       <Container>
-        <Text m={10}>Enhance your outdoor experience with a beautiful patio.
-         We offer quality craftsmanship, durable materials, and designs that create a perfect
-        space for enjoying the weather, dining al fresco, and making memories with loved ones.
+        <Text m={10}>Boost your home&apos;s value and create the extra space
+         you need with a stunning extension.
+         We offer quality craftsmanship,
+         durable materials, and designs that maximize both functionality and resale potential.
         </Text>
       </Container>
 

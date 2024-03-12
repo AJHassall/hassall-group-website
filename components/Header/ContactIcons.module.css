@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: var(--mantine-spacing-md);
+}
+
+.title {
+}
+
+.description {
+  
+}
