@@ -7,6 +7,7 @@ import { ContactUs } from '@/components';
 import { Header } from '@/components/Header/Header';
 import '@mantine/carousel/styles.css';
 import './layout.css';
+import GooglemapsLocation from '@/components/GooglemapsLocation/GooglemapsLocation';
 
 export const metadata: Metadata = {
   title: 'Hassall-Group-Ltd',
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <MantineProvider defaultColorScheme="light" theme={theme}>
             <Header />
             {children}
+            <GooglemapsLocation />
             <ContactUs />
           </MantineProvider>
         </NextAppDirEmotionCacheProvider>

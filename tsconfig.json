@@ -20,7 +20,7 @@
     },
     "plugins": [{ "name": "next" }]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "lib/theme"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "lib/theme", "app/api/images/route.js"],
   "exclude": ["node_modules"],
   "ignorePatterns": ["lib/theme/index.d.ts"]
 }

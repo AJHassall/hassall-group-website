@@ -3,12 +3,11 @@ import path from 'path';
 
 export async function GET(req, res) {
 
-    console.log("sss")
-  const imagesDirectory = path.join(process.cwd(), 'public/content/kitchens');
+  const imagesDirectory = path.join(process.cwd(), 'public/content/loftconversions');
   const fileNames = fs.readdirSync(imagesDirectory);
 
   const images = fileNames.map(fileName => ({
-    src: `/content/kitchens/${fileName}`,
+    src: `/content/loftconversions/${fileName}`,
     alt: fileName.replace(/\.[^/.]+$/, "")  
   }));
 

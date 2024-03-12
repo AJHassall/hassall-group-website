@@ -17,7 +17,7 @@ const GalleryPage = () => {
 
   useEffect(() => {
     const fetchImages = async () => {
-      const response = await fetch('/api/kitchens');
+      const response = await fetch('/api/patios');
       const data = await response.json();
       setImages(data);
 

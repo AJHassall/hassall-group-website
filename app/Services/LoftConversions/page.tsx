@@ -17,7 +17,7 @@ const GalleryPage = () => {
 
   useEffect(() => {
     const fetchImages = async () => {
-      const response = await fetch('/api/kitchens');
+      const response = await fetch('/api/loftconversions');
       const data = await response.json();
       setImages(data);
 
@@ -40,13 +40,16 @@ const GalleryPage = () => {
     <>
     <Stack>
       <div style={{ textAlign: 'center' }}>
+      <Container size="xs">
         <Title c="darkBlue" m={20}>Kitchen Renovations</Title>
+      </Container>
       </div>
       <div>
-        <Text m={10}>Invest in your home and lifestyle with a beautiful
-              kitchen renovation.  We offer quality craftsmanship,
-              durable materials, and timeless designs that increase the
-                value of your property while bringing you years of enjoyment.
+        <Text p={10}>Invest in your home and lifestyle with
+        a stunning loft conversion.  Maximize your living space,
+         transforming your unused attic into a beautiful and functional
+         room.  We offer expert craftsmanship, high-quality materials,
+         and stylish designs to elevate your homes value and your quality of life.
         </Text>
       </div>
 

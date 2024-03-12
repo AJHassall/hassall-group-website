@@ -62,7 +62,7 @@ export function FeaturesCards() {
       </Title>
 
     <Text c="dimmed" className={classes.description} ta="center" mt="md">
-      With [number] years of experience, we deliver  projects that stand the test of time.
+      With more than 15 years of experience, we deliver  projects that stand the test of time.
     </Text>
 
       <SimpleGrid cols={{ base: 1, md: 3 }} spacing="xl" mt={50}>

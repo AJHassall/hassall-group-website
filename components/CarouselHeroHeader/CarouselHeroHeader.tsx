@@ -7,13 +7,11 @@ import { Container, Image, Text, Title } from '@mantine/core';
 import classes from './CarouselHeroHeader.module.css';
 
 import roof from '@/public/content/roofing/roofing (2).jpg';
-import bathroom from '@/public/content/bathrooms/Bathroom (3).jpg';
 import extension from '@/public/content/extensions/extension (1).jpg';
 import loftconversion from '@/public/content/loftconversions/loft_conversion (3).jpg';
 
 const images = [
         roof.src,
-        bathroom.src,
         extension.src,
         loftconversion.src,
     ];
@@ -42,9 +40,9 @@ function CarouselHeroHeader() {
 
     </Carousel>
 
-      <Container m={0} p={0} w="100%" bg="white" className={classes.textContainer}>
-          <Title order={2} c="black" fw={700}>Specialist Builders Essex and Canvey</Title>
-          <Text> Call now on 00000-000000  </Text>
+      <Container m={0} p={0} w="100%" className={classes.textContainer}>
+          <Title order={2} c="darkBlue" fw={1000}>Specialist Builders Essex and Canvey</Title>
+          <Text c="grey"> Call now on 00000-000000  </Text>
       </Container>
     </div>
   );
