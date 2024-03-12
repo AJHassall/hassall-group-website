@@ -5,6 +5,7 @@ import { Grid, Image, Container, Title, Text, Stack } from '@mantine/core';
 import { Carousel } from '@mantine/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import classes from './styles.module.css';
+import fetchWithBaseUrl from '@/helpers/fetchWithBaseUrl';
 
 interface ImageData {
   src: string;
@@ -17,7 +18,7 @@ const GalleryPage = () => {
 
   useEffect(() => {
     const fetchImages = async () => {
-      const response = await fetch('/api/patios');
+      const response = await fetchWithBaseUrl('/api/patios');
       const data = await response.json();
       setImages(data);
 
