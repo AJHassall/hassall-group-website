@@ -32,5 +32,8 @@ const MOCKDATA = [
 
 export function ContactIconsList() {
   const items = MOCKDATA.map((item, index) => <ContactIcon key={index} {...item} />);
-  return <Flex>{items}</Flex>;
+ return (
+  <Box className={classes.contactIconsList}>
+   <Flex>{items}</Flex>
+  </Box>);
 }

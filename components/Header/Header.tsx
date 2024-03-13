@@ -30,7 +30,7 @@ export function Header() {
             <Logo />
           </Link>
           <Stack>
-
+2
           <ContactIconsList />
           <Divider />
           <Group justify="flex-end" h="100%" gap={0} visibleFrom="sm">

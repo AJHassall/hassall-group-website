@@ -1,9 +1,9 @@
-import { GetInTouchSimple } from '@/components';
+import { ContactUs } from '@/components';
 
-export default function ContactUs() {
+export default function ContactUsPage() {
   return (
     <>
-      <GetInTouchSimple />
+        <ContactUs />
     </>
   );
 }

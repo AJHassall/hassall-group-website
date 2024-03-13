@@ -7,9 +7,9 @@
   margin-right: var(--mantine-spacing-md);
 }
 
-.title {
-}
 
-.description {
-  
+  @media only screen and (max-width: 768px) {
+  .contactIconsList { 
+      display: none  /* Hide grid on mobile */
+  }
 }

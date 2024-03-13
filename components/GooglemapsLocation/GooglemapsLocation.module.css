@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     width: 100%;
-
+    pointer-events: none;
 }
 
 .locationOverlay {  
@@ -13,3 +13,37 @@
   height: 50px;  /* Height of the area to hide   */
   background-color: white;  /* Match your page background */
 }
+
+.areasList {
+  list-style-type: disc; /* Keep the disc bullet style */
+  margin-left: 20px; 
+  line-height: 1.6;  
+  overflow: hidden;  /* Part of the clearfix */
+  font-size: x-large;
+}
+
+.areasList li {
+  float: left;
+  margin-right: 2rem; /* Space between items */
+}
+
+
+.contentOverlay {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;       
+  height: 100%;  
+}
+
+.hideTop{
+  width: 100%;
+  height: 3rem;
+  position: relative;
+  top: 3rem;
+  left: 0;
+  right: 0;
+
+  background-color: white;
+}
+
