@@ -1,6 +1,7 @@
 .location{
     padding: 0;
     margin: 0;
+    height: 100%;
     width: 100%;
     pointer-events: none;
 }
@@ -9,7 +10,7 @@
   position: absolute; /* Or 'fixed' if needed */
   top: 0;
   left: 0;
-  width: 640px; /* Match iframe width */
+  width: 320px; /* Match iframe width */
   height: 50px;  /* Height of the area to hide   */
   background-color: white;  /* Match your page background */
 }
@@ -38,9 +39,9 @@
 
 .hideTop{
   width: 100%;
-  height: 3rem;
+  height: 4rem;
   position: relative;
-  top: 3rem;
+  top: 4rem;
   left: 0;
   right: 0;
 

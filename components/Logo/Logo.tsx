@@ -1,14 +1,19 @@
-import { Image } from '@mantine/core';
+import { Image, ImageProps } from '@mantine/core';
 
-export function Logo() {
+interface LogoProps extends ImageProps { // Extend Mantine's ImageProps
+  size: number;
+}
+
+export function Logo({ size, ...otherProps }: LogoProps) {
   const assetDomain = process.env.pathPrefix;
 
   return (
     <Image
       src={`${assetDomain}/hassall90x50 no background.png`}
-      w="15rem"
-      height="auto"
-      alt="Company logo"
+      fit="contain"
+      w={size}
+      h="auto"
+      {...otherProps} // Pass any remaining props to Image
     />
   );
 }

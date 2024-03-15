@@ -27,10 +27,12 @@ export function Header() {
 
         <Group justify="space-between" h="100%">
           <Link href="/" className={classes.link}>
-            <Logo />
+            <div className={classes.logoContainer}>
+              <Logo size={256} />
+            </div>
           </Link>
           <Stack>
-2
+
           <ContactIconsList />
           <Divider />
           <Group justify="flex-end" h="100%" gap={0} visibleFrom="sm">

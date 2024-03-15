@@ -20,7 +20,7 @@ export const themeOverride = createTheme({
   },
   fontFamily: 'Verdana, sans-serif',
   fontFamilyMonospace: 'Monaco, Courier, monospace',
-  headings: { fontFamily: 'Greycliff CF, sans-serif' },
+  headings: { fontFamily: 'Play, Greycliff CF, sans-serif' },
 });
 
 export const theme = mergeMantineTheme(DEFAULT_THEME, themeOverride);

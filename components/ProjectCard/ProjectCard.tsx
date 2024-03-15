@@ -30,7 +30,7 @@ function ProjectCard({ imageSrc, caption, additionalImages }: ProjectCardProps) 
           </button>
           <div className="modal-content">
             {additionalImages.map((imgSrc, index) => (
-              <img key={index} src={imgSrc} alt={`Project ${index}`} />
+              <Image key={index} src={imgSrc} alt={`Project ${index}`} />
             ))}
           </div>
         </div>

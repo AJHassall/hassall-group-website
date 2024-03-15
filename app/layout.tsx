@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
-import { MantineProvider, ColorSchemeScript } from '@mantine/core';
+import { MantineProvider, ColorSchemeScript, Box } from '@mantine/core';
 import { NextAppDirEmotionCacheProvider } from 'tss-react/next/appDir';
 import { theme } from '@/lib/theme';
 import '@mantine/core/styles.css';
 import { Header } from '@/components/Header/Header';
 import '@mantine/carousel/styles.css';
 import './layout.css';
-import GooglemapsLocation from '@/components/GooglemapsLocation/GooglemapsLocation';
+import { FooterSimple } from '@/components';
 
 export const metadata: Metadata = {
   title: 'Hassall-Group-Ltd',
@@ -23,8 +23,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <NextAppDirEmotionCacheProvider options={{ key: 'css' }}>
           <MantineProvider defaultColorScheme="light" theme={theme}>
             <Header />
-            {children}
-            <GooglemapsLocation />
+            <Box component="main" bg="white">
+              {children}
+            </Box>
+
+            <FooterSimple />
+
           </MantineProvider>
         </NextAppDirEmotionCacheProvider>
 

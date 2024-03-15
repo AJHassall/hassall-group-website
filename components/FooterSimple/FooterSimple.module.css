@@ -1,6 +1,11 @@
-.footer {
+.footerWrapper {
   margin-top: rem(120px);
   border-top: rem(1px) solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-5));
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  
 }
 
 .inner {
@@ -19,4 +24,8 @@
   @media (max-width: $mantine-breakpoint-xs) {
     margin-top: var(--mantine-spacing-md);
   }
+}
+
+.footerSpacer{
+  height: 200px;
 }

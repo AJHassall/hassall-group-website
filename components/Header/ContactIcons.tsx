@@ -6,9 +6,10 @@ interface ContactIconProps extends Omit<React.ComponentPropsWithoutRef<'div'>, '
   icon: typeof IconSun;
   title: React.ReactNode;
   description: React.ReactNode;
+  href: string;
 }
 
-function ContactIcon({ icon: Icon, title, description, ...others }: ContactIconProps) {
+function ContactIcon({ icon: Icon, title, description, href, ...others }: ContactIconProps) {
   return (
     <div className={classes.wrapper} {...others}>
       <Box mr="md">
@@ -19,15 +20,15 @@ function ContactIcon({ icon: Icon, title, description, ...others }: ContactIconP
         <Text size="xs" className={classes.title}>
           {title}
         </Text>
-        <Text className={classes.description}>{description}</Text>
+        <a href={href} className={classes.description}>{description}</a>
       </div>
     </div>
   );
 }
 
 const MOCKDATA = [
-  { title: 'Email', description: 'Mathew@HassallGroupLtd.co.uk', icon: IconAt },
-  { title: 'Phone', description: '+49 (800) 335 35 35', icon: IconPhone },
+  { title: 'Email', description: 'hassallgroup@gmail.com', href: 'mailto:hassallgroup@gmail.com', icon: IconAt },
+  { title: 'Phone', description: '07799 683073', href: 'tel:07799 683073', icon: IconPhone },
 ];
 
 export function ContactIconsList() {
