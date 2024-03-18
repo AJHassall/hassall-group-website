@@ -10,7 +10,7 @@ import {
   Container,
   rem,
 } from '@mantine/core';
-import { IconHammer, IconUser, IconClock2 } from '@tabler/icons-react';
+import { IconWall, IconUser, IconClockHour4 } from '@tabler/icons-react';
 import classes from './FeaturesCards.module.css';
 
 const mockdata = [
@@ -18,7 +18,7 @@ const mockdata = [
     title: 'Quality Craftsmanship',
     description:
       'Our skilled team takes pride in meticulous attention to detail, delivering projects that reflect superior workmanship and enduring quality.',
-    icon: IconHammer,
+    icon: IconWall,
   },
   {
     title: 'Client-Focused',
@@ -30,7 +30,7 @@ const mockdata = [
     title: 'Timely & Efficient',
     description:
       'With streamlined processes and a commitment to deadlines, we strive to complete projects on time and within budget.',
-    icon: IconClock2,
+    icon: IconClockHour4,
   },
 ];
 

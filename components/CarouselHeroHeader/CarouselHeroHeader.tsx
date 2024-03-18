@@ -48,4 +48,4 @@ function CarouselHeroHeader() {
   );
 }
 
-export default CarouselHeroHeader;
+export { CarouselHeroHeader };
