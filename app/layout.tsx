@@ -2,11 +2,11 @@ import type { Metadata } from 'next';
 import { MantineProvider, ColorSchemeScript, Box } from '@mantine/core';
 import { NextAppDirEmotionCacheProvider } from 'tss-react/next/appDir';
 import { theme } from '@/lib/theme';
-import '@mantine/core/styles.css';
 import { Header } from '@/components/Header/Header';
+import { FooterSimple } from '@/components';
+import '@mantine/core/styles.css';
 import '@mantine/carousel/styles.css';
 import './layout.css';
-import { FooterSimple } from '@/components';
 
 export const metadata: Metadata = {
   title: 'Hassall-Group-Ltd',

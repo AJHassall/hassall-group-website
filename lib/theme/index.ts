@@ -7,6 +7,13 @@ import {
   mergeMantineTheme,
 } from '@mantine/core';
 import { themeToVars } from '@mantine/vanilla-extract';
+import { Roboto } from 'next/font/google';
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const roboto = Roboto({
+  weight: '400',
+  subsets: ['latin'],
+});
 
 export const themeOverride = createTheme({
   primaryColor: 'orange',
@@ -18,9 +25,9 @@ export const themeOverride = createTheme({
     darkBlue: ['#3b4c77', '#3b4c77', '#3b4c77', '#3b4c77', '#3b4c77', '#3b4c77', '#3b4c77', '#3b4c77', '#3b4c77', '#3b4c77'],
     grey: ['#919fa4', '#919fa4', '#919fa4', '#919fa4', '#919fa4', '#919fa4', '#919fa4', '#919fa4', '#919fa4', '#919fa4'],
   },
-  fontFamily: 'Verdana, sans-serif',
-  fontFamilyMonospace: 'Monaco, Courier, monospace',
-  headings: { fontFamily: 'Play, Greycliff CF, sans-serif' },
+  fontFamily: roboto.style.fontFamily,
+  fontFamilyMonospace: roboto.style.fontFamily,
+  headings: { fontFamily: roboto.style.fontFamily },
 });
 
 export const theme = mergeMantineTheme(DEFAULT_THEME, themeOverride);
