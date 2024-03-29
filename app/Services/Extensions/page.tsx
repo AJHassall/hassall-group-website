@@ -18,7 +18,7 @@ const GalleryPage = () => {
 
   useEffect(() => {
     const fetchImages = async () => {
-      const response = await fetchWithBaseUrl('/api/extensions');
+      const response = await fetchWithBaseUrl('/api/getImages');
       const data = await response.json();
       setImages(data);
 
