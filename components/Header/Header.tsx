@@ -31,11 +31,11 @@ export function Header() {
               <Logo size={256} />
             </div>
           </Link>
-          <Stack>
 
-          <ContactIconsList />
-          <Divider />
           <Group justify="flex-end" h="100%" gap={0} visibleFrom="sm">
+            <Link href="/ContactUs" className={classes.link}>
+              About
+            </Link>
             <Link href="/ContactUs" className={classes.link}>
               Contact Us
             </Link>
@@ -77,7 +77,7 @@ export function Header() {
               </Menu.Dropdown>
             </Menu>
           </Group>
-          </Stack>
+          <ContactIconsList />
 
           <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
         </Group>
@@ -106,32 +106,32 @@ export function Header() {
               </Menu.Target>
               <Menu.Dropdown>
                 <Menu.Item>
-                  <Link href="/Services/KitchenRenovations" className={classes.link}>
+                  <Link href="/services/kitchenrenovations" className={classes.link}>
                   Kitchen Renovations
                   </Link>
                 </Menu.Item>
                 <Menu.Item>
-                  <Link href="/Services/LoftConversions" className={classes.link}>
+                  <Link href="/services/loftconversions" className={classes.link}>
                   Loft Conversions
                   </Link>
                 </Menu.Item>
                 <Menu.Item>
-                  <Link href="/Services/Roofing" className={classes.link}>
+                  <Link href="/services/roofing" className={classes.link}>
                   Roofing
                   </Link>
                 </Menu.Item>
                 <Menu.Item>
-                  <Link href="/Services/Fencing" className={classes.link}>
+                  <Link href="/services/fencing" className={classes.link}>
                   Fencing
                   </Link>
                 </Menu.Item>
                 <Menu.Item>
-                  <Link href="/Services/Patios" className={classes.link}>
+                  <Link href="/services/patios" className={classes.link}>
                   Patios
                   </Link>
                 </Menu.Item>
                 <Menu.Item>
-                  <Link href="/Services/Bathrooms" className={classes.link}>
+                  <Link href="/services/bathrooms" className={classes.link}>
                   Bathrooms
                   </Link>
                 </Menu.Item>

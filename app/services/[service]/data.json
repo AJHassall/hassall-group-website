@@ -1,0 +1,35 @@
+{
+    "wording":
+  [
+    {
+      "name": "extensions",
+      "title": "Extensions",
+      "description": "We offer a wide range of extensions to enhance the functionality of your home."
+    },
+    {
+      "name": "fencing",
+      "title": "Fencing",
+      "description": "We offer a wide range of extensions to enhance the functionality of your home."
+    },
+    {
+      "name": "kitchenrenovations",
+      "title": "Kitchen Renovations",
+      "description": "We offer a wide range of extensions to enhance the functionality of your home."
+    },
+    {
+      "name": "loftconversions",
+      "title": "Loft Conversions",
+      "description": "We offer a wide range of extensions to enhance the functionality of your home."
+    },
+    {
+      "name": "patios",
+      "title": "Patios",
+      "description": "We offer a wide range of extensions to enhance the functionality of your home."
+    },
+    {
+      "name": "roofing",
+      "title": "Roofing",
+      "description": "We offer a wide range of extensions to enhance the functionality of your home."
+    }
+  ]
+}

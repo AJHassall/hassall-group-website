@@ -41,7 +41,7 @@ interface ImageData {
           <Title c="darkBlue" m={20}>{serviceData.title}</Title>
         </div>
         <Container>
-          <Text m={10}>{serviceData.wording}
+          <Text m={10}>{serviceData.description}
           </Text>
         </Container>
 
