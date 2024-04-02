@@ -32,7 +32,7 @@ const GalleryPage = () => {
 
   const slides = images.map((image) => (
       <Carousel.Slide key={image.src}>
-      <Image src={image.src} height={700} />
+        <Image src={`${process.env.basePath}/${image.src}`} height={700} />
       </Carousel.Slide>
   ));
   const autoplay = useRef(Autoplay({ delay: 2000 }));

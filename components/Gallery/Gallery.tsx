@@ -5,30 +5,22 @@ import { Grid, Image, Container, Title, Text, Stack } from '@mantine/core';
 import { Carousel } from '@mantine/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import classes from './styles.module.css';
-import fetchWithBaseUrl from '@/helpers/fetchWithBaseUrl';
 
 interface ImageData {
     src: string;
     alt: string;
   }
 
-interface params {
-    productId: string;
-    params: object;
-}
-
-    function GalleryPage({ productId }: { productId :any }) {
+    function GalleryPage({ serviceData, imagePaths }: { serviceData :any, imagePaths: any }) {
     const [images, setImages] = useState<ImageData[]>([]);
     const [selectedImage, setSelectedImage] = useState<ImageData | null>(null);
 
     useEffect(() => {
       const fetchImages = async () => {
-        const response = await fetchWithBaseUrl(`/api/${productId}`);
-        const data = await response.json();
-        setImages(data);
+        setImages(imagePaths);
 
-        if (data.length > 0) {
-          setSelectedImage(data[0]);
+        if (imagePaths.length > 0) {
+          setSelectedImage(imagePaths[0]);
         }
       };
 
@@ -46,12 +38,10 @@ interface params {
       <>
       <Stack>
         <div style={{ textAlign: 'center' }}>
-          <Title c="darkBlue" m={20}>Roofing</Title>
+          <Title c="darkBlue" m={20}>{serviceData.title}</Title>
         </div>
         <Container>
-          <Text m={10}>Protect your biggest investment with a quality roof.
-           We offer expert craftsmanship, long-lasting materials,
-           and superior weatherproofing to ensure your home stays safe and dry for years to come.
+          <Text m={10}>{serviceData.wording}
           </Text>
         </Container>
 

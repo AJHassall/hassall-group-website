@@ -41,8 +41,8 @@ function CarouselHeroHeader() {
     </Carousel>
 
       <Container m={0} p={0} w="100%" className={classes.textContainer}>
-          <Title order={2} c="darkBlue" fw={1000}>Specialist Builders Essex and Canvey</Title>
-          <Text c="grey"> Call now on 00000-000000  </Text>
+          <Title order={2} c="darkBlue" fw={1000}>Specialist builders based in Essex</Title>
+          <Text c="grey"> Call now on <a href="tel:07799 683073">07799 683073</a>  </Text>
       </Container>
     </div>
   );
