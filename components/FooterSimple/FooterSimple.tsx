@@ -1,24 +1,21 @@
 'use client';
 
-import { Container, Group, Anchor, Box, Button } from '@mantine/core';
+import { Container, Group, Anchor, Box, Button, Paper } from '@mantine/core';
 import Link from 'next/link';
 import classes from './FooterSimple.module.css';
 import { Logo } from '../Logo/Logo';
 
 const links = [
-  { link: '#', label: 'Contact' },
-  { link: '#', label: 'Privacy' },
-  { link: '#', label: 'Blog' },
-  { link: '#', label: 'Careers' },
+  { link: '#', label: 'Facebook' },
+  { link: '#', label: 'Instagram' },
 ];
 
 export function FooterSimple() {
   const items = links.map((link) => (
     <Anchor<'a'>
-      c="darkBlue"
+      c="white"
       key={link.label}
       href={link.link}
-     // onClick={(event) => event.preventDefault()}
       size="xl"
     >
       {link.label}
@@ -28,13 +25,15 @@ export function FooterSimple() {
   return (
     <>
     <div className={classes.footerSpacer} />
-    <Box component="div" className={classes.footerWrapper}>
+    <Box component="div" className={classes.footerWrapper} bg="blue">
       <Container className={classes.inner}>
+        <Paper pl="lg" pr="lg">
         <Logo size={256} />
-        <Group className={classes.links}>
+        </Paper>
+        <Group className={classes.links} p="lg">
           {items}
           <Link href="/get-a-quote">
-            <Button variant="outline">Get a Quote</Button>
+            <Button variant="filled">Get a Quote</Button>
           </Link>
         </Group>
       </Container>

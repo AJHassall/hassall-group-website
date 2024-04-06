@@ -1,18 +1,10 @@
-.imageContainer {
-    position: relative; /* Needed for containing aspect ratio */
-    overflow: hidden; /* Clip overflowing content */
-    width: 100%;  /* Fill the available width */
-  }
+
   
-  .imageContainer img {
-    width: 100%; /* Image scales proportionally */
-    height: auto;  /* Maintains aspect ratio */
-    position: absolute; /* Ensures image fills container */
-    top: 0;
-    left: 0;
-  }
-  
+
   .selectableImage{
+    cursor: -moz-zoom-in; 
+    cursor: -webkit-zoom-in; 
+    cursor: zoom-in;
     @mixin hover {
         box-shadow: var(--mantine-shadow-md);
         transform: scale(1.05);
@@ -22,14 +14,3 @@
   .mobileImageViewer{
     display: none;
   }
-
-    @media only screen and (max-width: 768px) {
-    .desktopImageViewer { 
-        display: none  /* Hide grid on mobile */
-    }
-    .mobileImageViewer{
-      display: inline;
-    }
-
-    /* Additional styles for swiping, indicators etc. */    
-    }

@@ -11,7 +11,6 @@ import {
   rem,
   Menu,
   Button,
-  Stack,
 } from '@mantine/core';
 import { IconChevronDown } from '@tabler/icons-react';
 import { useDisclosure } from '@mantine/hooks';
@@ -45,32 +44,32 @@ export function Header() {
               </Menu.Target>
               <Menu.Dropdown>
                 <Menu.Item>
-                  <Link href="/Services/KitchenRenovations" className={classes.link}>
+                  <Link href="/services/kitchenrenovations" className={classes.link}>
                   Kitchen Renovations
                   </Link>
                 </Menu.Item>
                 <Menu.Item>
-                  <Link href="/Services/LoftConversions" className={classes.link}>
+                  <Link href="/services/loftconversions" className={classes.link}>
                   Loft Conversions
                   </Link>
                 </Menu.Item>
                 <Menu.Item>
-                  <Link href="/Services/Roofing" className={classes.link}>
+                  <Link href="/services/roofing" className={classes.link}>
                   Roofing
                   </Link>
                 </Menu.Item>
                 <Menu.Item>
-                  <Link href="/Services/Fencing" className={classes.link}>
+                  <Link href="/services/fencing" className={classes.link}>
                   Fencing
                   </Link>
                 </Menu.Item>
                 <Menu.Item>
-                  <Link href="/Services/Patios" className={classes.link}>
+                  <Link href="/services/patios" className={classes.link}>
                   Patios
                   </Link>
                 </Menu.Item>
                 <Menu.Item>
-                  <Link href="/Services/BathroomsAndKitchens" className={classes.link}>
+                  <Link href="/services/kitchenrenovations" className={classes.link}>
                   Bathrooms and Kitchens
                   </Link>
                 </Menu.Item>
