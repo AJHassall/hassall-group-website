@@ -11,6 +11,7 @@ import {
   rem,
   Menu,
   Button,
+  Text,
 } from '@mantine/core';
 import { IconChevronDown } from '@tabler/icons-react';
 import { useDisclosure } from '@mantine/hooks';
@@ -33,14 +34,18 @@ export function Header() {
 
           <Group justify="flex-end" h="100%" gap={0} visibleFrom="sm">
             <Link href="/ContactUs" className={classes.link}>
-              About
+              <Text fz="lg">
+                About
+              </Text>
             </Link>
             <Link href="/ContactUs" className={classes.link}>
-              Contact Us
+            <Text fz="lg">
+              Contact
+            </Text>
             </Link>
             <Menu>
               <Menu.Target>
-                <Button color="#0190b8">Our Services <IconChevronDown /></Button>
+                <Button color="#0190b8" fz="lg">Our Services <IconChevronDown /></Button>
               </Menu.Target>
               <Menu.Dropdown>
                 <Menu.Item>

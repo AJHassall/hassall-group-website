@@ -47,7 +47,7 @@ interface ImageData {
 
       </Stack>
 
-        <SimpleGrid cols={3} m="xl">
+        <SimpleGrid cols={{ base: 1, sm: 2, lg: 4 }} m="xl">
 
                 {images.map((image) => (
 

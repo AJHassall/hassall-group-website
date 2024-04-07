@@ -5,7 +5,7 @@
   bottom:0;
   left:0;
   right:0;
-  
+  background-color: light-dark(var(--mantine-color-gray-0))
 }
 
 .inner {
@@ -27,5 +27,5 @@
 }
 
 .footerSpacer{
-  height: 200px;
+  height: 175px;
 }

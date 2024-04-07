@@ -1,6 +1,6 @@
 'use client';
 
-import { Container, TextInput, Textarea, Title } from '@mantine/core';
+import { Button, Container, TextInput, Textarea, Title } from '@mantine/core';
 import { useState } from 'react';
 import classes from './ContactUs.module.css';
 
@@ -26,8 +26,8 @@ export default function ContactUsPage() {
 
   return (
     <>
-        <Container size="sm">
-          <Title ta="center">Enquiry Form</Title>
+        <Container size="sm" h="100%" p="xl">
+          <Title c="darkBlue" ta="center">Enquiry Form</Title>
           <form>
             <TextInput
               labelProps={{ 'data-floating': nameFocused || name.length > 0 || undefined }}
@@ -65,6 +65,7 @@ export default function ContactUsPage() {
               onChange={(event) => setMessage(event.currentTarget.value)}
               label="Message"
             />
+            <Button type="submit">Send</Button>
           </form>
         </Container>
     </>

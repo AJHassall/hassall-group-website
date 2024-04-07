@@ -39,10 +39,10 @@ export function FeaturesCards() {
         stroke={2}
         color="darkBlue"
       />
-      <Text fz="lg" fw={500} className={classes.cardTitle} mt="md">
+      <Text fz="xl" fw={500} className={classes.cardTitle} mt="md">
         {feature.title}
       </Text>
-      <Text fz="sm" c="dimmed" mt="sm">
+      <Text fz="lg" c="dimmed" mt="sm">
         {feature.description}
       </Text>
     </Card>

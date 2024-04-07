@@ -17,10 +17,10 @@ function ContactIcon({ icon: Icon, title, description, href, ...others }: Contac
       </Box>
 
       <div>
-        <Text size="xs" className={classes.title}>
+        <Text size="lg" className={classes.title}>
           {title}
         </Text>
-        <a href={href} className={classes.description}>{description}</a>
+        <a href={href} className={classes.description}><Text fz="md">{description}</Text></a>
       </div>
     </div>
   );

@@ -1,40 +1,30 @@
 'use client';
 
-import { Container, Group, Anchor, Box, Button, Paper } from '@mantine/core';
-import Link from 'next/link';
+import { Container, Group, Box, Paper, ActionIcon, rem } from '@mantine/core';
+import { IconBrandFacebook, IconBrandInstagram, IconBrandYoutube } from '@tabler/icons-react';
 import classes from './FooterSimple.module.css';
 import { Logo } from '../Logo/Logo';
 
-const links = [
-  { link: '#', label: 'Facebook' },
-  { link: '#', label: 'Instagram' },
-];
-
 export function FooterSimple() {
-  const items = links.map((link) => (
-    <Anchor<'a'>
-      c="white"
-      key={link.label}
-      href={link.link}
-      size="xl"
-    >
-      {link.label}
-    </Anchor>
-  ));
-
   return (
     <>
     <div className={classes.footerSpacer} />
-    <Box component="div" className={classes.footerWrapper} bg="blue">
+    <Box component="div" className={classes.footerWrapper}>
       <Container className={classes.inner}>
-        <Paper pl="lg" pr="lg">
-        <Logo size={256} />
+        <Paper pl="lg" pr="lg" style={{ backgroundColor: 'rgba(0,0,0,0)' }}>
+        <Logo size={200} />
         </Paper>
-        <Group className={classes.links} p="lg">
-          {items}
-          <Link href="/get-a-quote">
-            <Button variant="filled">Get a Quote</Button>
-          </Link>
+
+        <Group pr="lg" gap="sm" justify="flex-end" wrap="nowrap">
+          <ActionIcon size="lg" variant="default" radius="xl">
+            <IconBrandFacebook style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
+          </ActionIcon>
+          <ActionIcon size="lg" variant="default" radius="xl">
+            <IconBrandYoutube style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
+          </ActionIcon>
+          <ActionIcon size="lg" variant="default" radius="xl">
+            <IconBrandInstagram style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
+          </ActionIcon>
         </Group>
       </Container>
     </Box>

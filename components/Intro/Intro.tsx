@@ -16,7 +16,7 @@ export default function Intro() {
             Your Trusted Building Partner
         </Title>
 
-        <Text c="dimmed" className={classes.description} w="100%" ta="justify" mt="md" p={0}>
+        <Text c="dimmed" className={classes.description} fz="lg" w="100%" ta="justify" mt="md" p={0}>
         Welcome to Hassall Group, A principal building and landscaping company.
         We cover all aspects of Extensions, Conversions, Bricklaying, Carpentry, Plastering,
         Groundworks, and Roofing. We stand out with a commitment to precision and craftsmanship

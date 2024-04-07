@@ -19,7 +19,7 @@ const images = [
 function CarouselHeroHeader() {
     const slides = images.map((image) => (
         <Carousel.Slide key={image}>
-        <Image src={image} height={700} />
+        <Image src={image} height="100%" />
         </Carousel.Slide>
     ));
 
@@ -30,7 +30,7 @@ function CarouselHeroHeader() {
     <Carousel
       withIndicators
       loop
-      height={700}
+      height="30rem"
       plugins={[autoplay.current]}
       onMouseEnter={autoplay.current.stop}
       onMouseLeave={autoplay.current.reset}
@@ -42,7 +42,7 @@ function CarouselHeroHeader() {
 
       <Container m={0} p={0} w="100%" className={classes.textContainer}>
           <Title order={2} c="darkBlue" fw={1000}>Specialist builders based in Essex</Title>
-          <Text c="grey"> Call now on <a href="tel:07799 683073">07799 683073</a>  </Text>
+          <Text c="grey" fz="xl"> Call now on <a href="tel:07799 683073">07799 683073</a>  </Text>
       </Container>
     </div>
   );
