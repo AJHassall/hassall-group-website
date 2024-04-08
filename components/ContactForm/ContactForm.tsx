@@ -2,9 +2,9 @@
 
 import { Button, Container, TextInput, Textarea, Title } from '@mantine/core';
 import { useState } from 'react';
-import classes from './ContactUs.module.css';
+import classes from './ContactForm.module.css';
 
-export default function ContactUsPage() {
+export function ContactForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');

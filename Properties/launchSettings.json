@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "hassall_group_website": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7008",
+      "launchBrowser": false
+    }
+  }
+}

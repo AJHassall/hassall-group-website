@@ -7,7 +7,7 @@ import { FooterSimple } from '@/components';
 import '@mantine/core/styles.css';
 import '@mantine/carousel/styles.css';
 import './layout.css';
-import ContactUsPage from './ContactUs/page';
+import { ContactForm } from '@/components/ContactForm/ContactForm';
 
 export const metadata: Metadata = {
   title: 'Hassall-Group-Ltd',
@@ -26,9 +26,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Header />
             <Box component="main" bg="white">
               {children}
-              <ContactUsPage />
+            <ContactForm />
             </Box>
-
             <FooterSimple />
 
           </MantineProvider>

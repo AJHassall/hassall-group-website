@@ -2,5 +2,13 @@
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": "always"
     },
-    "eslint.validate": ["javascript", "typescript"]
+    "eslint.validate": [
+      "javascript",
+      "typescript"
+    ],
+    "azureFunctions.deploySubpath": "bin/Release/net8.0/publish",
+    "azureFunctions.projectLanguage": "C#",
+    "azureFunctions.projectRuntime": "~4",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.preDeployTask": "publish (functions)"
    }

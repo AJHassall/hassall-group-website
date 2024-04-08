@@ -1,6 +1,7 @@
 {
     "version": "0.2.0",
     "configurations": [
+
       {
         "name": "Next.js: debug server-side",
         "type": "node-terminal",
@@ -23,6 +24,12 @@
           "uriFormat": "%s",
           "action": "debugWithChrome"
         }
+      },
+      {
+        "name": "Attach to .NET Functions",
+        "type": "node",
+        "request": "attach",
+        "processId": "${command:azureFunctions.pickProcess}"
       }
     ]
   }

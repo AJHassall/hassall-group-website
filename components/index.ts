@@ -22,4 +22,4 @@ export { CarouselHeroHeader } from './CarouselHeroHeader/CarouselHeroHeader';
 
 export { ArticlesCardsGrid } from './ArticlesCardsGrid/ArticlesCardsGrid';
 
-export { ContactUs } from './ContactUs/ContactUs';
+export { ContactForm } from './ContactForm/ContactForm';
