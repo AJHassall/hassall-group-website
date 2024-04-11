@@ -1,7 +1,7 @@
 'use client';
 
-import { Container, Group, Box, Paper, ActionIcon, rem } from '@mantine/core';
-import { IconBrandFacebook, IconBrandInstagram, IconBrandYoutube } from '@tabler/icons-react';
+import { Container, Group, Box, Paper, ActionIcon, rem, Text } from '@mantine/core';
+import { IconBrandFacebook, IconBrandInstagram, IconBrandYoutube, IconCopyright } from '@tabler/icons-react';
 import classes from './FooterSimple.module.css';
 import { Logo } from '../Logo/Logo';
 
@@ -27,6 +27,10 @@ export function FooterSimple() {
           </ActionIcon>
         </Group>
       </Container>
+        <Text size="xs" bg="black" c="white" ta="right">
+          <IconCopyright style={{ width: rem(18), height: rem(18), verticalAlign: 'middle' }} stroke={1} />
+          2024 Copyright, Hassall Group Ltd, Essex United Kingdom
+        </Text>
     </Box>
     </>
   );

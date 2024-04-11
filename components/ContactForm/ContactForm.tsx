@@ -1,7 +1,8 @@
 'use client';
 
 import { Button, Container, TextInput, Textarea, Title } from '@mantine/core';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
+import { useReCaptcha } from 'next-recaptcha-v3';
 import classes from './ContactForm.module.css';
 
 export function ContactForm() {
@@ -24,11 +25,32 @@ export function ContactForm() {
     mb: '2rem',
   };
 
+  const { executeRecaptcha } = useReCaptcha();
+
+  const handleSubmit = useCallback(
+    async (e: { preventDefault: () => void; }) => {
+      e.preventDefault();
+
+      // Generate ReCaptcha token
+      const token = await executeRecaptcha('form_submit');
+
+      // Attach generated token to your API requests and validate it on the server
+      fetch('/api/form-submit', {
+        method: 'POST',
+        body: JSON.stringify({
+          data: { name, email, subject, message },
+          token,
+        }),
+      });
+    },
+    [executeRecaptcha, name],
+  );
+
   return (
     <>
         <Container size="sm" h="100%" p="xl">
           <Title c="darkBlue" ta="center">Enquiry Form</Title>
-          <form>
+          <form onSubmit={handleSubmit}>
             <TextInput
               labelProps={{ 'data-floating': nameFocused || name.length > 0 || undefined }}
               {...sharedInputProps}

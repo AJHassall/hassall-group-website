@@ -11747,6 +11747,11 @@ neo-async@^2.5.0, neo-async@^2.6.2:
   resolved "https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
+next-recaptcha-v3@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/next-recaptcha-v3/-/next-recaptcha-v3-1.4.1.tgz#8cbb3bd0f64c2b1da5a22414205f14635feff216"
+  integrity sha512-ZQXwcGHMIbXG3ppK6s2EGyTMjkVW5wARupQsBrFQbO6BhNlfBXAb3BVQEZt6uYyp12z5tf06DEa3JIqCqQoXTQ==
+
 next@^14.1.4:
   version "14.1.4"
   resolved "https://registry.yarnpkg.com/next/-/next-14.1.4.tgz#203310f7310578563fd5c961f0db4729ce7a502d"

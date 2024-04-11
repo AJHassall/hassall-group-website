@@ -24,12 +24,6 @@
           "uriFormat": "%s",
           "action": "debugWithChrome"
         }
-      },
-      {
-        "name": "Attach to .NET Functions",
-        "type": "node",
-        "request": "attach",
-        "processId": "${command:azureFunctions.pickProcess}"
       }
     ]
   }
