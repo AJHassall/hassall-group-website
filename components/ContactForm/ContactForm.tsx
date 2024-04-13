@@ -35,7 +35,7 @@ export function ContactForm() {
       const token = await executeRecaptcha('form_submit');
 
       // Attach generated token to your API requests and validate it on the server
-      fetch('/api/form-submit', {
+      fetch('http://localhost:7071/api/SendMail', {
         method: 'POST',
         body: JSON.stringify({
           data: { name, email, subject, message },
