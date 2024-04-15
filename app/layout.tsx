@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { MantineProvider, ColorSchemeScript, Box } from '@mantine/core';
 import { NextAppDirEmotionCacheProvider } from 'tss-react/next/appDir';
-import { ReCaptchaProvider } from 'next-recaptcha-v3';
 import { theme } from '@/lib/theme';
 import { Header } from '@/components/Header/Header';
 import { FooterSimple } from '@/components';
@@ -23,14 +22,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <NextAppDirEmotionCacheProvider options={{ key: 'css' }}>
           <MantineProvider defaultColorScheme="light" theme={theme}>
-            <ReCaptchaProvider useEnterprise>
-              <Header />
+=              <Header />
               <Box component="main" bg="white">
                 {children}
               </Box>
               <FooterSimple />
-            </ReCaptchaProvider>
-
           </MantineProvider>
         </NextAppDirEmotionCacheProvider>
 
