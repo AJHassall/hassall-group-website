@@ -1,6 +1,6 @@
 import bundleAnalyzer from '@next/bundle-analyzer';
 
-const pathPrefix = process.env.NODE_ENV === 'production'
+const pathPrefix = process.env.NODE_ENV === 'ghpages'
   ? '/hassall-group-website'
   : '';
 
