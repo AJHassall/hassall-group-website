@@ -24,11 +24,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <NextAppDirEmotionCacheProvider options={{ key: 'css' }}>
           <MantineProvider defaultColorScheme="light" theme={theme}>
-            <ReCaptchaProvider useEnterprise reCaptchaKey={process.env.RECAPTCHA_KEY}>
+            <ReCaptchaProvider useEnterprise>
               <Header />
               <Box component="main" bg="white">
                 {children}
-              <ContactForm />
               </Box>
               <FooterSimple />
             </ReCaptchaProvider>

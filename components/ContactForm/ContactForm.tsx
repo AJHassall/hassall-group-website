@@ -23,38 +23,42 @@ export function ContactForm() {
       label: classes.label,
     },
     mb: '2rem',
+    mt: 'md',
   };
 
-  const { executeRecaptcha } = useReCaptcha();
+  const { loaded, executeRecaptcha } = useReCaptcha();
 
   const handleSubmit = useCallback(
     async (e: { preventDefault: () => void; }) => {
       e.preventDefault();
-
-      // Generate ReCaptcha token
       const token = await executeRecaptcha('form_submit');
+      const form = document.getElementById('enquiry-form') as HTMLFormElement;
+      const formData = new FormData(form);
+
+      formData.append('token', token);
+      // Generate ReCaptcha token
 
       // Attach generated token to your API requests and validate it on the server
       fetch('http://localhost:7071/api/SendMail', {
         method: 'POST',
-        body: JSON.stringify({
-          data: { name, email, subject, message },
-          token,
-        }),
+        body: formData,
       });
     },
-    [executeRecaptcha, name],
+    [executeRecaptcha, name, email, subject, message],
+
   );
 
   return (
     <>
+
         <Container size="sm" h="100%" p="xl">
-          <Title c="darkBlue" ta="center">Enquiry Form</Title>
-          <form onSubmit={handleSubmit}>
+          <Title c="darkBlue" ta="center">{loaded}</Title>
+          <form onSubmit={handleSubmit} id="enquiry-form">
             <TextInput
               labelProps={{ 'data-floating': nameFocused || name.length > 0 || undefined }}
               {...sharedInputProps}
               label="Name"
+              name="name"
               onFocus={() => setNameFocused(true)}
               onBlur={() => setNameFocused(false)}
               value={name}
@@ -63,20 +67,22 @@ export function ContactForm() {
             <TextInput
               labelProps={{ 'data-floating': emailFocused || email.length > 0 || undefined }}
               {...sharedInputProps}
+              label="Email"
+              name="email"
               onFocus={() => setEmailFocused(true)}
               onBlur={() => setEmailFocused(false)}
               value={email}
               onChange={(event) => setEmail(event.currentTarget.value)}
-              label="Email"
             />
             <TextInput
               labelProps={{ 'data-floating': subjectFocused || subject.length > 0 || undefined }}
               {...sharedInputProps}
+              label="Subject"
+              name="subject"
               onFocus={() => setSubjectFocused(true)}
               onBlur={() => setSubjectFocused(false)}
               value={subject}
               onChange={(event) => setSubject(event.currentTarget.value)}
-              label="Subject"
             />
             <Textarea
               labelProps={{ 'data-floating': messageFocused || message.length > 0 || undefined }}
@@ -84,8 +90,9 @@ export function ContactForm() {
               onFocus={() => setMessageFocused(true)}
               onBlur={() => setMessageFocused(false)}
               value={message}
-              onChange={(event) => setMessage(event.currentTarget.value)}
               label="Message"
+              name="message"
+              onChange={(event) => setMessage(event.currentTarget.value)}
             />
             <Button type="submit">Send</Button>
           </form>

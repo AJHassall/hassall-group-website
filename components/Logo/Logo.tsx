@@ -5,11 +5,9 @@ interface LogoProps extends ImageProps { // Extend Mantine's ImageProps
 }
 
 export function Logo({ size, ...otherProps }: LogoProps) {
-  const assetDomain = process.env.pathPrefix;
-
   return (
     <Image
-      src={`${assetDomain}/hassall90x50 no background.png`}
+      src="/hassall90x50 no background.png"
       fit="contain"
       w={size}
       h="auto"

@@ -6,7 +6,7 @@ export async function GetImages(service :string) {
     const fileNames = fs.readdirSync(imagesDirectory);
 
     const images = fileNames.map((fileName: string) => ({
-      src: `${process.env.pathPrefix}/content/${service}/${fileName}`,
+      src: `/content/${service}/${fileName}`,
       alt: fileName.replace(/\.[^/.]+$/, ''),
     }));
 

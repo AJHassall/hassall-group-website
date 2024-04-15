@@ -4,11 +4,11 @@
   }
   
   .input {
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
     border-bottom-width: rem(2px);
-    border-radius: 0;
+    border-radius: 0 !important;
     padding-left: 0;
     background-color: var(--mantine-color-body);
   }
