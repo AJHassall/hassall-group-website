@@ -11,7 +11,6 @@ import {
   rem,
   Menu,
   Button,
-  Text,
 } from '@mantine/core';
 import { IconChevronDown } from '@tabler/icons-react';
 import { useDisclosure } from '@mantine/hooks';
@@ -33,16 +32,6 @@ export function Header() {
           </Link>
 
           <Group justify="flex-end" h="100%" gap={0} visibleFrom="sm">
-            <Link href="/ContactUs" className={classes.link}>
-              <Text fz="lg">
-                About
-              </Text>
-            </Link>
-            <Link href="/ContactUs" className={classes.link}>
-            <Text fz="lg">
-              Contact
-            </Text>
-            </Link>
             <Menu>
               <Menu.Target>
                 <Button color="#0190b8" fz="lg">Our Services <IconChevronDown /></Button>
@@ -98,9 +87,6 @@ export function Header() {
       >
         <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
           <Divider my="sm" />
-            <Link href="/AboutUs" className={classes.link}>
-              About Us
-            </Link>
             <Link href="/OurProjects" className={classes.link}>
               Our Projects
             </Link>
