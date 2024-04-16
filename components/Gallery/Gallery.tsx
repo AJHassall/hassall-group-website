@@ -64,7 +64,8 @@ interface ImageData {
                       }}
                       width={300}
                       height={200}
-
+                      placeholder="blur"
+                      onLoadingComplete
                     />
 
                 ))}

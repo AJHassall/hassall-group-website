@@ -23,7 +23,7 @@ function CarouselHeroHeader() {
         </Carousel.Slide>
     ));
 
-  const autoplay = useRef(Autoplay({ delay: 2000 }));
+  const autoplay = useRef(Autoplay({ delay: 4000 }));
   return (
     <div className={classes.heroContainer}>
 

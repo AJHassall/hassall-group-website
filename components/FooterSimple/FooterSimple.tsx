@@ -27,7 +27,7 @@ export function FooterSimple() {
           </ActionIcon>
         </Group>
       </Container>
-        <Text size="xs" bg="black" c="white" ta="right">
+        <Text size="xs" bg="black" c="white" ta="center">
           <IconCopyright style={{ width: rem(18), height: rem(18), verticalAlign: 'middle' }} stroke={1} />
           2024 Copyright, Hassall Group Ltd, Essex United Kingdom
         </Text>
