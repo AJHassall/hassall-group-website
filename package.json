@@ -22,6 +22,7 @@
     "storybook:build": "storybook build"
   },
   "dependencies": {
+    "@azure/storage-blob": "^12.17.0",
     "@emotion/react": "^11.11.3",
     "@mantine/carousel": "^7.5.3",
     "@mantine/charts": "^7.5.3",

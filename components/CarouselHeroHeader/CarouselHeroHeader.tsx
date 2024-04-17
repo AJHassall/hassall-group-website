@@ -6,9 +6,9 @@ import { Carousel } from '@mantine/carousel';
 import { Container, Image, Text, Title } from '@mantine/core';
 import classes from './CarouselHeroHeader.module.css';
 
-import roof from '@/public/content/roofing/roofing (2).jpg';
-import extension from '@/public/content/extensions/extension (1).jpg';
-import loftconversion from '@/public/content/loftconversions/loft_conversion (3).jpg';
+import roof from '@/public/content/roofing/roofing (2).webp';
+import extension from '@/public/content/extensions/extension (1).webp';
+import loftconversion from '@/public/content/loftconversions/loft_conversion (3).webp';
 
 const images = [
         roof.src,

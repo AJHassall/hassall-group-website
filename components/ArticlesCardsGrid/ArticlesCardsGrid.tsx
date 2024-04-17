@@ -2,12 +2,12 @@ import { SimpleGrid, Card, Image, Text, Container, AspectRatio } from '@mantine/
 import Link from 'next/link';
 import classes from './ArticlesCardsGrid.module.css';
 
-import loftconversion from '@/public/content/loftconversions/loft_conversion (1).jpg';
-import extension from '@/public/content/extensions/extension (1).jpg';
-import kitchen from '@/public/content/kitchenrenovations/kitchen_renovation (1).jpg';
-import fencing from '@/public/content/fencing/Fencing (1).jpg';
-import patio from '@/public/content//patios/Patios (1).jpg';
-import roof from '@/public/content/roofing/roofing (1).jpg';
+import loftconversion from '@/public/content/loftconversions/loft_conversion (2).webp';
+import extension from '@/public/content/extensions/extension (1).webp';
+import kitchen from '@/public/content/kitchenrenovations/kitchen_renovation (1).webp';
+import fencing from '@/public/content/fencing/Fencing (1).webp';
+import patio from '@/public/content//patios/Patios (1).webp';
+import roof from '@/public/content/roofing/roofing (1).webp';
 
 const mockdata = [
   {

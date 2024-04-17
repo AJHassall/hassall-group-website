@@ -1,35 +1,34 @@
 {
-    "wording":
-  [
+  "wording": [
     {
       "name": "extensions",
       "title": "Extensions",
-      "description": "We offer a wide range of extensions to enhance the functionality of your home."
+      "description": "Expand your living space with our selection of single-story, wrap-around, and multi-story extensions."
     },
     {
       "name": "fencing",
       "title": "Fencing",
-      "description": "We offer a wide range of extensions to enhance the functionality of your home."
+      "description": "Secure and enhance your property boundaries with our variety of fencing options, including wood, vinyl, and metal."
     },
     {
       "name": "kitchenrenovations",
       "title": "Kitchen Renovations",
-      "description": "We offer a wide range of extensions to enhance the functionality of your home."
+      "description": "Transform the heart of your home with our kitchen renovations, from modern updates to complete redesigns."
     },
     {
       "name": "loftconversions",
       "title": "Loft Conversions",
-      "description": "We offer a wide range of extensions to enhance the functionality of your home."
+      "description": "Maximize your home's potential with a loft conversion. Create extra bedrooms, a home office, or a relaxing retreat."
     },
     {
       "name": "patios",
       "title": "Patios",
-      "description": "We offer a wide range of extensions to enhance the functionality of your home."
+      "description": "Extend your living space outdoors with a custom-designed patio, perfect for entertaining and relaxation."
     },
     {
       "name": "roofing",
       "title": "Roofing",
-      "description": "We offer a wide range of extensions to enhance the functionality of your home."
+      "description": "Protect your home with our roofing services, including new roof installations, repairs, and maintenance."
     }
   ]
 }
