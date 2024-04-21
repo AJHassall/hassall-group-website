@@ -11,6 +11,8 @@ import {
   rem,
   Menu,
   Button,
+  Text,
+  Accordion,
 } from '@mantine/core';
 import { IconChevronDown } from '@tabler/icons-react';
 import { useDisclosure } from '@mantine/hooks';
@@ -20,6 +22,7 @@ import { ContactIconsList } from './ContactIcons';
 
 export function Header() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
+
   return (
     <Box>
       <header className={classes.header}>
@@ -88,47 +91,49 @@ export function Header() {
         <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
           <Divider my="sm" />
             <Link href="/OurProjects" className={classes.link}>
-              Our Projects
+              <Text size="md" w="100%">
+                Projects
+              </Text>
             </Link>
-            <Menu>
-              <Menu.Target>
-                <Button color="#0190b8">Our Services</Button>
-              </Menu.Target>
-              <Menu.Dropdown>
-                <Menu.Item>
-                  <Link href="/services/kitchenrenovations" className={classes.link}>
-                  Kitchen Renovations
-                  </Link>
-                </Menu.Item>
-                <Menu.Item>
-                  <Link href="/services/loftconversions" className={classes.link}>
-                  Loft Conversions
-                  </Link>
-                </Menu.Item>
-                <Menu.Item>
-                  <Link href="/services/roofing" className={classes.link}>
-                  Roofing
-                  </Link>
-                </Menu.Item>
-                <Menu.Item>
-                  <Link href="/services/fencing" className={classes.link}>
-                  Fencing
-                  </Link>
-                </Menu.Item>
-                <Menu.Item>
-                  <Link href="/services/patios" className={classes.link}>
-                  Patios
-                  </Link>
-                </Menu.Item>
-                <Menu.Item>
-                  <Link href="/services/bathrooms" className={classes.link}>
-                  Bathrooms
-                  </Link>
-                </Menu.Item>
-              </Menu.Dropdown>
-            </Menu>
+            <Accordion>
+                <Accordion.Item value="Services">
+                  <Accordion.Control>Services</Accordion.Control>
+                  <Accordion.Panel>
+                      <Link href="/services/kitchenrenovations" className={classes.link}>
+                      Kitchen Renovations
+                      </Link>
+                  </Accordion.Panel>
+                  <Accordion.Panel>
+                      <Link href="/services/loftconversions" className={classes.link}>
+                      Loft Conversions
+                      </Link>
+                  </Accordion.Panel>
+                  <Accordion.Panel>
+                      <Link href="/services/roofing" className={classes.link}>
+                      Roofing
+                      </Link>
+                  </Accordion.Panel>
+                  <Accordion.Panel>
+                      <Link href="/services/fencing" className={classes.link}>
+                      Fencing
+                      </Link>
+                  </Accordion.Panel>
+                  <Accordion.Panel>
+                      <Link href="/services/patios" className={classes.link}>
+                      Patios
+                      </Link>
+                  </Accordion.Panel>
+                  <Accordion.Panel>
+                      <Link href="/services/bathrooms" className={classes.link}>
+                      Bathrooms
+                      </Link>
+                  </Accordion.Panel>
+                </Accordion.Item>
+            </Accordion>
+
         </ScrollArea>
       </Drawer>
+
     </Box>
   );
 }

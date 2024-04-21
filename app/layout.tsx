@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { MantineProvider, ColorSchemeScript, Box } from '@mantine/core';
 import { NextAppDirEmotionCacheProvider } from 'tss-react/next/appDir';
+import Head from 'next/head';
 import { theme } from '@/lib/theme';
 import { Header } from '@/components/Header/Header';
 import { FooterSimple } from '@/components';
@@ -16,9 +17,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <head>
+      <Head>
         <ColorSchemeScript defaultColorScheme="light" />
-      </head>
+      </Head>
       <body>
         <NextAppDirEmotionCacheProvider options={{ key: 'css' }}>
           <MantineProvider defaultColorScheme="light" theme={theme}>
