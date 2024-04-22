@@ -12,6 +12,8 @@ export async function generateStaticParams() {
     { service: 'loftconversions' },
     { service: 'patios' },
     { service: 'roofing' },
+    { service: 'carpentryandjoinery'},
+    { service: 'bathrooms'}
   ];
 }
 

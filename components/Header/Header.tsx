@@ -67,8 +67,18 @@ export function Header() {
                 </Menu.Item>
                 <Menu.Item>
                   <Link href="/services/kitchenrenovations" className={classes.link}>
-                  Bathrooms and Kitchens
+                  Kitchens
                   </Link>
+                </Menu.Item>
+                <Menu.Item>
+                <Link href="/services/carpentryandjoinery" className={classes.link}>
+                  Carpentry And Joinery
+                </Link>
+                </Menu.Item>
+                <Menu.Item>
+                <Link href="/services/bathrooms" className={classes.link}>
+                  Bathrooms
+                </Link>
                 </Menu.Item>
               </Menu.Dropdown>
             </Menu>
@@ -121,6 +131,16 @@ export function Header() {
                   <Accordion.Panel>
                       <Link href="/services/patios" className={classes.link} onClick={toggleDrawer}>
                       Patios
+                      </Link>
+                  </Accordion.Panel>
+                  <Accordion.Panel>
+                      <Link href="/services/bathrooms" className={classes.link} onClick={toggleDrawer}>
+                      Bathrooms
+                      </Link>
+                  </Accordion.Panel>
+                  <Accordion.Panel>
+                      <Link href="/services/carpentryandjoinery" className={classes.link} onClick={toggleDrawer}>
+                      Carpentry And Joinery
                       </Link>
                   </Accordion.Panel>
                   <Accordion.Panel>

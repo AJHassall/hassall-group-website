@@ -29,6 +29,16 @@
       "name": "roofing",
       "title": "Roofing",
       "description": "Protect your home with our roofing services, including new roof installations, repairs, and maintenance."
+    },
+    {
+      "name": "carpentryandjoinery",
+      "title": "Carpentry And Joinery",
+      "description": "Protect your home with our roofing services, including new roof installations, repairs, and maintenance."
+    },
+    {
+      "name": "bathrooms",
+      "title": "Bathrooms",
+      "description": "Protect your home with our roofing services, including new roof installations, repairs, and maintenance."
     }
   ]
 }
