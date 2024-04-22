@@ -99,32 +99,32 @@ export function Header() {
                 <Accordion.Item value="Services">
                   <Accordion.Control>Services</Accordion.Control>
                   <Accordion.Panel>
-                      <Link href="/services/kitchenrenovations" className={classes.link}>
+                      <Link href="/services/kitchenrenovations" className={classes.link} onClick={toggleDrawer}>
                       Kitchen Renovations
                       </Link>
                   </Accordion.Panel>
                   <Accordion.Panel>
-                      <Link href="/services/loftconversions" className={classes.link}>
+                      <Link href="/services/loftconversions" className={classes.link} onClick={toggleDrawer}>
                       Loft Conversions
                       </Link>
                   </Accordion.Panel>
                   <Accordion.Panel>
-                      <Link href="/services/roofing" className={classes.link}>
+                      <Link href="/services/roofing" className={classes.link } onClick={toggleDrawer}>
                       Roofing
                       </Link>
                   </Accordion.Panel>
                   <Accordion.Panel>
-                      <Link href="/services/fencing" className={classes.link}>
+                      <Link href="/services/fencing" className={classes.link} onClick={toggleDrawer}>
                       Fencing
                       </Link>
                   </Accordion.Panel>
                   <Accordion.Panel>
-                      <Link href="/services/patios" className={classes.link}>
+                      <Link href="/services/patios" className={classes.link} onClick={toggleDrawer}>
                       Patios
                       </Link>
                   </Accordion.Panel>
                   <Accordion.Panel>
-                      <Link href="/services/bathrooms" className={classes.link}>
+                      <Link href="/services/bathrooms" className={classes.link} onClick={toggleDrawer}>
                       Bathrooms
                       </Link>
                   </Accordion.Panel>
