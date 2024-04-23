@@ -46,13 +46,8 @@ export function Header() {
                   </Link>
                 </Menu.Item>
                 <Menu.Item>
-                  <Link href="/services/loftconversions" className={classes.link}>
-                  Loft Conversions
-                  </Link>
-                </Menu.Item>
-                <Menu.Item>
-                  <Link href="/services/roofing" className={classes.link}>
-                  Roofing
+                  <Link href="/services/conversions" className={classes.link}>
+                  Conversions
                   </Link>
                 </Menu.Item>
                 <Menu.Item>
@@ -61,14 +56,24 @@ export function Header() {
                   </Link>
                 </Menu.Item>
                 <Menu.Item>
-                  <Link href="/services/patios" className={classes.link}>
-                  Patios
+                  <Link href="/services/landscaping" className={classes.link}>
+                  Landscaping
                   </Link>
                 </Menu.Item>
                 <Menu.Item>
                   <Link href="/services/kitchenrenovations" className={classes.link}>
-                  Bathrooms and Kitchens
+                  Kitchens
                   </Link>
+                </Menu.Item>
+                <Menu.Item>
+                <Link href="/services/carpentryandjoinery" className={classes.link}>
+                  Carpentry And Joinery
+                </Link>
+                </Menu.Item>
+                <Menu.Item>
+                <Link href="/services/bathrooms" className={classes.link}>
+                  Bathrooms
+                </Link>
                 </Menu.Item>
               </Menu.Dropdown>
             </Menu>
@@ -90,9 +95,9 @@ export function Header() {
       >
         <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
           <Divider my="sm" />
-            <Link href="/OurProjects" className={classes.link}>
+            <Link href="/" className={classes.link} onClick={toggleDrawer}>
               <Text size="md" w="100%">
-                Projects
+                Home
               </Text>
             </Link>
             <Accordion>
@@ -104,28 +109,29 @@ export function Header() {
                       </Link>
                   </Accordion.Panel>
                   <Accordion.Panel>
-                      <Link href="/services/loftconversions" className={classes.link} onClick={toggleDrawer}>
-                      Loft Conversions
+                      <Link href="/services/conversions" className={classes.link} onClick={toggleDrawer}>
+                      Conversions
                       </Link>
                   </Accordion.Panel>
-                  <Accordion.Panel>
-                      <Link href="/services/roofing" className={classes.link} onClick={toggleDrawer}>
-                      Roofing
-                      </Link>
-                  </Accordion.Panel>
+
                   <Accordion.Panel>
                       <Link href="/services/fencing" className={classes.link} onClick={toggleDrawer}>
                       Fencing
                       </Link>
                   </Accordion.Panel>
                   <Accordion.Panel>
-                      <Link href="/services/patios" className={classes.link} onClick={toggleDrawer}>
-                      Patios
+                      <Link href="/services/landscaping" className={classes.link} onClick={toggleDrawer}>
+                      Landscaping
                       </Link>
                   </Accordion.Panel>
                   <Accordion.Panel>
                       <Link href="/services/bathrooms" className={classes.link} onClick={toggleDrawer}>
                       Bathrooms
+                      </Link>
+                  </Accordion.Panel>
+                  <Accordion.Panel>
+                      <Link href="/services/carpentryandjoinery" className={classes.link} onClick={toggleDrawer}>
+                      Carpentry And Joinery
                       </Link>
                   </Accordion.Panel>
                 </Accordion.Item>

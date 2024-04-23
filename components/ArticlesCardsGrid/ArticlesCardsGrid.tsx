@@ -2,23 +2,23 @@ import { SimpleGrid, Card, Image, Text, Container, AspectRatio } from '@mantine/
 import Link from 'next/link';
 import classes from './ArticlesCardsGrid.module.css';
 
-import loftconversion from '@/public/content/loftconversions/loft_conversion (2).webp';
-import extension from '@/public/content/extensions/extension (1).webp';
+import conversions from '@/public/content/conversions/conversions (9).webp';
+import extension from '@/public/content/carpentryandjoinery/carpentryandjoinery (3).webp';
 import kitchen from '@/public/content/kitchenrenovations/kitchen_renovation (1).webp';
 import fencing from '@/public/content/fencing/Fencing (1).webp';
-import patio from '@/public/content//patios/Patios (1).webp';
-import roof from '@/public/content/roofing/roofing (1).webp';
+import landscaping from '@/public/content//landscaping/Landscaping (9).webp';
+import bathroom from '@/public/content/bathrooms/Bathroom (8).webp';
 
 const mockdata = [
   {
-    title: 'Loft conversions',
-    href: 'services/loftconversions',
-    image: loftconversion.src,
+    title: 'Conversions',
+    href: 'services/conversions',
+    image: conversions.src,
     date: 'August 18, 2022',
   },
   {
-    title: 'Extensions',
-    href: 'services/extensions',
+    title: 'Carpentry and Joinery',
+    href: 'services/carpentryandjoinery',
     image: extension.src,
     date: 'August 27, 2022',
   },
@@ -35,16 +35,16 @@ const mockdata = [
     date: 'September 12, 2022',
   },
   {
-    title: 'Patios',
-    href: 'services/patios',
-    image: patio.src,
+    title: 'Landscaping',
+    href: 'services/landscaping',
+    image: landscaping.src,
     date: 'September 12, 2022',
 
   },
   {
-    title: 'Roofing',
-    href: 'services/roofing',
-    image: roof.src,
+    title: 'Bathrooms',
+    href: 'services/bathrooms',
+    image: bathroom.src,
     date: 'September 12, 2022',
   },
 ];

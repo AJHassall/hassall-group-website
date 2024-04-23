@@ -6,12 +6,12 @@ import { wording } from './data.json';
 
 export async function generateStaticParams() {
   return [
-    { service: 'extensions' },
     { service: 'fencing' },
     { service: 'kitchenrenovations' },
-    { service: 'loftconversions' },
-    { service: 'patios' },
-    { service: 'roofing' },
+    { service: 'conversions' },
+    { service: 'landscaping' },
+    { service: 'carpentryandjoinery' },
+    { service: 'bathrooms' },
   ];
 }
 

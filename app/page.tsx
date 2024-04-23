@@ -8,8 +8,8 @@ export default function HomePage() {
     <>
       <CarouselHeroHeader />
       <Intro />
-      <FeaturesCards />
       <ArticlesCardsGrid />
+      <FeaturesCards />
     </>
   );
 }

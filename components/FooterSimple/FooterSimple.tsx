@@ -1,7 +1,7 @@
 'use client';
 
 import { Container, Group, Box, Paper, ActionIcon, rem, Text } from '@mantine/core';
-import { IconBrandFacebook, IconBrandInstagram, IconBrandYoutube, IconCopyright } from '@tabler/icons-react';
+import { IconBrandFacebook, IconBrandInstagram, IconCopyright } from '@tabler/icons-react';
 import classes from './FooterSimple.module.css';
 import { Logo } from '../Logo/Logo';
 
@@ -16,13 +16,10 @@ export function FooterSimple() {
         </Paper>
 
         <Group pr="lg" gap="sm" justify="flex-end" wrap="nowrap">
-          <ActionIcon size="lg" variant="default" radius="xl">
+          <ActionIcon size="lg" variant="default" radius="xl" component="a" href="https://www.facebook.com/hassallgroupltd/">
             <IconBrandFacebook style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
           </ActionIcon>
-          <ActionIcon size="lg" variant="default" radius="xl">
-            <IconBrandYoutube style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size="lg" variant="default" radius="xl">
+          <ActionIcon size="lg" variant="default" radius="xl" component="a" href="https://www.instagram.com/hassallgroupltd/">
             <IconBrandInstagram style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
           </ActionIcon>
         </Group>

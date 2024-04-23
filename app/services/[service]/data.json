@@ -1,34 +1,45 @@
 {
-  "wording": [
+   "wording": [
     {
-      "name": "extensions",
-      "title": "Extensions",
-      "description": "Expand your living space with our selection of single-story, wrap-around, and multi-story extensions."
+     "name": "conversions",
+     "title": "Extensions",
+     "description": "Expand your living space with custom-designed extensions, from single-story additions to multi-level transformations that maximize your home's potential."
     },
     {
-      "name": "fencing",
-      "title": "Fencing",
-      "description": "Secure and enhance your property boundaries with our variety of fencing options, including wood, vinyl, and metal."
+     "name": "fencing",
+     "title": "Fencing",
+     "description": "Secure your property and enhance its curb appeal with our stylish and durable fencing options in wood, vinyl, metal, and other high-quality materials."
     },
     {
-      "name": "kitchenrenovations",
-      "title": "Kitchen Renovations",
-      "description": "Transform the heart of your home with our kitchen renovations, from modern updates to complete redesigns."
+     "name": "kitchenrenovations",
+     "title": "Kitchen Renovations",
+     "description": "Create the kitchen of your dreams with our expert renovations, from modern updates and functional layouts to complete redesigns that reflect your style."
     },
     {
-      "name": "loftconversions",
-      "title": "Loft Conversions",
-      "description": "Maximize your home's potential with a loft conversion. Create extra bedrooms, a home office, or a relaxing retreat."
+     "name": "loftconversions",
+     "title": "Loft Conversions",
+     "description": "Utilize your unused attic space with our loft conversions, transforming it into extra bedrooms, a home office, or a relaxing retreat designed to fit your needs."
     },
     {
-      "name": "patios",
-      "title": "Patios",
-      "description": "Extend your living space outdoors with a custom-designed patio, perfect for entertaining and relaxation."
+     "name": "landscaping",
+     "title": "Landscaping",
+     "description": "Transform your outdoor space into an extension of your home with our custom-designed patios, walkways, garden designs, and water features that enhance your enjoyment."
     },
     {
-      "name": "roofing",
-      "title": "Roofing",
-      "description": "Protect your home with our roofing services, including new roof installations, repairs, and maintenance."
+     "name": "roofing",
+     "title": "Roofing",
+     "description": "Protect your home's value and ensure lasting comfort with our professional roofing installations, repairs, and maintenance services using top-quality materials."
+    },
+    {
+     "name": "carpentryandjoinery",
+     "title": "Carpentry And Joinery",
+     "description": "Enhance your home's beauty and functionality with custom woodwork, built-in cabinetry, and expert joinery solutions crafted with precision and quality."
+    },
+    {
+     "name": "bathrooms",
+     "title": "Bathrooms",
+     "description": "Upgrade your bathroom into a space of relaxation and rejuvenation with our custom renovations, featuring modern fixtures and luxurious finishes."
     }
-  ]
-}
+   ]
+  }
+  
