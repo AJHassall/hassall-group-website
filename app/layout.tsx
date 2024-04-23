@@ -4,7 +4,7 @@ import { NextAppDirEmotionCacheProvider } from 'tss-react/next/appDir';
 import Head from 'next/head';
 import { theme } from '@/lib/theme';
 import { Header } from '@/components/Header/Header';
-import { ContactForm, FooterSimple } from '@/components';
+import { FooterSimple } from '@/components';
 import '@mantine/core/styles.css';
 import '@mantine/carousel/styles.css';
 import './layout.css';
@@ -26,7 +26,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Header />
               <Box component="main" bg="white">
                 {children}
-                <ContactForm/>
               </Box>
               <FooterSimple />
           </MantineProvider>

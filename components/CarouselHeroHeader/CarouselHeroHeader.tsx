@@ -6,14 +6,20 @@ import { Carousel } from '@mantine/carousel';
 import { Container, Image, Text, Title } from '@mantine/core';
 import classes from './CarouselHeroHeader.module.css';
 
-import roof from '@/public/content/roofing/roofing (2).webp';
-import extension from '@/public/content/extensions/extension (1).webp';
-import loftconversion from '@/public/content/loftconversions/loft_conversion (3).webp';
+import landscaping from '@/public/content/landscaping/landscaping (15).webp';
+import conversion from '@/public/content/conversions/conversions (9).webp';
+import porch from '@/public/content/porches/porch.webp';
+import kitchen from '@/public/content/kitchenrenovations/kitchen_renovation (8).webp';
+import bathroom from '@/public/content/bathrooms/Bathroom (8).webp';
+import carpentryandjoinery from '@/public/content/carpentryandjoinery/carpentryandjoinery (1).webp';
 
 const images = [
-        roof.src,
-        extension.src,
-        loftconversion.src,
+        landscaping.src,
+        conversion.src,
+        porch.src,
+        kitchen.src,
+        bathroom.src,
+        carpentryandjoinery.src,
     ];
 
 function CarouselHeroHeader() {
