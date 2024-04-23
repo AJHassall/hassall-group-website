@@ -6,7 +6,7 @@ import conversions from '@/public/content/conversions/conversions (9).webp';
 import extension from '@/public/content/carpentryandjoinery/carpentryandjoinery (3).webp';
 import kitchen from '@/public/content/kitchenrenovations/kitchen_renovation (1).webp';
 import fencing from '@/public/content/fencing/Fencing (1).webp';
-import landscaping from '@/public/content//landscaping/Landscaping (9).webp';
+import landscaping from '@/public/content/landscaping/landscaping (9).webp';
 import bathroom from '@/public/content/bathrooms/Bathroom (8).webp';
 
 const mockdata = [
