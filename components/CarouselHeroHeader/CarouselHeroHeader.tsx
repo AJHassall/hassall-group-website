@@ -11,7 +11,6 @@ import conversion from '@/public/content/conversions/conversions (9).webp';
 import porch from '@/public/content/porches/porch.webp';
 import kitchen from '@/public/content/kitchenrenovations/kitchen_renovation (8).webp';
 import bathroom from '@/public/content/bathrooms/Bathroom (8).webp';
-import carpentryandjoinery from '@/public/content/carpentryandjoinery/carpentryandjoinery (1).webp';
 
 const images = [
         landscaping.src,
@@ -19,7 +18,6 @@ const images = [
         porch.src,
         kitchen.src,
         bathroom.src,
-        carpentryandjoinery.src,
     ];
 
 function CarouselHeroHeader() {
