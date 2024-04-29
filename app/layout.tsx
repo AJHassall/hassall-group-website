@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { MantineProvider, ColorSchemeScript, Box } from '@mantine/core';
 import { NextAppDirEmotionCacheProvider } from 'tss-react/next/appDir';
-import Head from 'next/head';
 import { theme } from '@/lib/theme';
 import { Header } from '@/components/Header/Header';
 import { FooterSimple } from '@/components';
@@ -10,16 +9,16 @@ import '@mantine/carousel/styles.css';
 import './layout.css';
 
 export const metadata: Metadata = {
-  title: 'Hassall-Group-Ltd',
-  description: '',
+  title: 'Hassall Group Ltd',
+  description: 'Experienced Essex builders - Hassall Group. Extensions, conversions, landscaping & more. Quality craftsmanship & trusted service. Get a free quote today!',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <ColorSchemeScript defaultColorScheme="light" />
-      </Head>
+      </head>
       <body>
         <NextAppDirEmotionCacheProvider options={{ key: 'css' }}>
           <MantineProvider defaultColorScheme="light" theme={theme}>
