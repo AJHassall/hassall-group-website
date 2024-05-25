@@ -19,11 +19,11 @@ export default function Intro() {
         <Text c="dimmed" className={classes.description} fz="lg" w="100%" ta="center" p="xl" mt="md">
         Welcome to Hassall Group, a principal building and landscaping company.
         We cover all aspects of Extensions, Conversions, Bricklaying, Carpentry,
-        Plastering, Groundworks,
+        Plastering, Groundworks
         and Roofing throughout Essex. We stand out with a commitment to precision and
         craftsmanship in every project.
-        Our landscaping seamlessly blends aesthetics and functionality. Dedicated to customer
-        satisfaction,
+        Our landscaping seamlessly blends aesthetics and functionality. We are Dedicated to customer
+        satisfaction and
         we prioritize open communication, transparency. Hassall Group for your building journey,
         where excellence is
         guaranteed in every aspect.

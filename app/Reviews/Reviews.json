@@ -1,0 +1,50 @@
+[
+    {
+        "id": 0,
+        "Author": "karla45088, Canvey Island",
+        "Rating": 5,
+        "Title": "Fit 4 new doors",
+        "Review": "Matthew was very friendly and job he did with replacing my 4 doors was out of this world. Will definitely get him and his work colleague back to do the other 5 doors. Thank you",
+        "Date": "4 Mar 2024"
+    },
+    {
+        "id": 1,
+        "Author": "sharon24743_65, Basildon",
+        "Rating": 5,
+        "Title": "Floor repairs", 
+        "Review": "The job was strengthening our staircase and replacing part of the flooring on our landing. Matthew was very quick at completing the job, no problems at all. We are more than happy with the completed job, floor is strong now and we would definately recommend him and wouldn’t hesitate to hire him again, he was punctual and efficient.",
+        "Date": "24 Feb 2024"
+    },
+    {
+        "id": 2,
+        "Author": "Customer of Hassall Group LTD",
+        "Rating": 5,
+        "Title": "Porch side extension with pitched tilled roof and face brickwork fully finished inside with 2/3rds split off for a walk in shower sink and toilet, fully tiled bathroom and some minor alterations inside.", 
+        "Review": "Porch & shower room with hand basin & toilet. Matt Planned & carried out the work efficiently. He was reliable & trustworthy when left in the house on his own.",
+        "Date": "8 Feb 2024"
+    },
+    {
+        "id": 3,
+        "Author": "kwasi64885, Basildon",
+        "Rating": 5,
+        "Title": "Plaster to kitchen ceiling replacement", 
+        "Review": "This guy is efficient and deligent with his job.Gave reasonable quote and perform job within 2 days .I can recommend him to anyone who needs ceiling done .",
+        "Date": "17 Feb 2024"
+    },
+    {
+        "id": 4,
+        "Author": "Graham Collisson",
+        "Rating": 5,
+        "Title": "", 
+        "Review": "Essex clay soil caused the garden to flood in the winter and go bone dry in the summer.  Hassall Group totally renovated the garden, added additional drainage and gave us a usable and wonderful garden",
+        "Date": "May 2024"
+    },
+    {
+        "id": 5,
+        "Author": "Jordan biker",
+        "Rating": 5,
+        "Title": "", 
+        "Review": "Used Mathew for multiple jobs, great reliable and reasonable builder im very pleased with all work carried out. Would highly recommend!",
+        "Date": "May 2024"
+    }
+]

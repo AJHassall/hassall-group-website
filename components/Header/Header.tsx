@@ -35,9 +35,15 @@ export function Header() {
           </Link>
 
           <Group justify="flex-end" h="100%" gap={0} visibleFrom="sm">
+            <Link className={classes.link} href="/About">
+              <Text>About</Text>
+            </Link>
+            <Link className={classes.link} href="/Reviews">
+              <Text>Reviews</Text>
+            </Link>
             <Menu>
               <Menu.Target>
-                <Button color="#0190b8" fz="lg">Our Services <IconChevronDown /></Button>
+                <Button color="#0190b8" fz="md">Our Services <IconChevronDown /></Button>
               </Menu.Target>
               <Menu.Dropdown>
                 <Menu.Item>
