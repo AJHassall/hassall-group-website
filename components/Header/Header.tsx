@@ -46,37 +46,37 @@ export function Header() {
                 <Button color="#0190b8" fz="md">Our Services <IconChevronDown /></Button>
               </Menu.Target>
               <Menu.Dropdown>
-                <Menu.Item>
+                <Menu.Item h={rem(30)} p={0}>
                   <Link href="/services/kitchenrenovations" className={classes.link}>
                   Kitchen Renovations
                   </Link>
                 </Menu.Item>
-                <Menu.Item>
+                <Menu.Item h={rem(30)} p={0}>
                   <Link href="/services/conversions" className={classes.link}>
                   Conversions
                   </Link>
                 </Menu.Item>
-                <Menu.Item>
+                <Menu.Item h={rem(30)} p={0}>
                   <Link href="/services/fencing" className={classes.link}>
                   Fencing
                   </Link>
                 </Menu.Item>
-                <Menu.Item>
+                <Menu.Item h={rem(30)} p={0}>
                   <Link href="/services/landscaping" className={classes.link}>
                   Landscaping
                   </Link>
                 </Menu.Item>
-                <Menu.Item>
+                <Menu.Item h={rem(30)} p={0}>
                   <Link href="/services/kitchenrenovations" className={classes.link}>
                   Kitchens
                   </Link>
                 </Menu.Item>
-                <Menu.Item>
+                <Menu.Item h={rem(30)} p={0}>
                 <Link href="/services/carpentryandjoinery" className={classes.link}>
                   Carpentry And Joinery
                 </Link>
                 </Menu.Item>
-                <Menu.Item>
+                <Menu.Item h={rem(30)} p={0}>
                 <Link href="/services/bathrooms" className={classes.link}>
                   Bathrooms
                 </Link>

@@ -3,7 +3,8 @@
 import { useRef } from 'react';
 import Autoplay from 'embla-carousel-autoplay';
 import { Carousel } from '@mantine/carousel';
-import { Container, Image, Text, Title } from '@mantine/core';
+import Link from 'next/link';
+import { Container, Image, Title } from '@mantine/core';
 import classes from './CarouselHeroHeader.module.css';
 
 import landscaping from '@/public/content/landscaping/landscaping (15).webp';
@@ -45,8 +46,8 @@ function CarouselHeroHeader() {
     </Carousel>
 
       <Container m={0} p={0} w="100%" className={classes.textContainer}>
-          <Title order={2} c="darkBlue" fw={1000}>Specialist builders based in Essex</Title>
-          <Text c="grey" fz="xl"> Call now on <a href="tel:07799 683073">07799 683073</a>  </Text>
+          <Title style={{ textShadow: '2px 2px #000' }} order={1} c="white" fw={1000}>Specialist builders based in Essex</Title>
+          <Title style={{ textShadow: '2px 2px #000' }} order={2} c="white"> Call now on <Link className={classes.link} href="tel:07799 683073">07799 683073</Link>  </Title>
       </Container>
     </div>
   );

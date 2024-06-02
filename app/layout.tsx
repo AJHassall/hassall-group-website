@@ -10,7 +10,7 @@ import './layout.css';
 
 export const metadata: Metadata = {
   title: 'Hassall Group Ltd',
-  description: 'Experienced Essex builders - Hassall Group. Extensions, conversions, landscaping & more. Quality craftsmanship & trusted service. Get a free quote today!',
+  description: 'Experienced Essex builders - Hassall Group. Extensions, conversions, landscaping & more. Quality craftsmanship & trusted service',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
