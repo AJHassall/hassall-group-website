@@ -21,7 +21,7 @@ const images = [
         bathroom.src,
     ];
 
-function CarouselHeroHeader() {
+function CarouselHeroHeader(props: any) {
     const slides = images.map((image) => (
         <Carousel.Slide key={image}>
         <Image src={image} height="100%" />
@@ -30,7 +30,7 @@ function CarouselHeroHeader() {
 
   const autoplay = useRef(Autoplay({ delay: 4000 }));
   return (
-    <div className={classes.heroContainer}>
+    <div className={classes.heroContainer} {...props}>
 
     <Carousel
       withIndicators

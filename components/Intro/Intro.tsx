@@ -4,6 +4,8 @@ import classes from './Intro.module.css';
 export default function Intro() {
     return (
     <>
+    <article>
+
     <Container size="lg" py="xl">
         <Group justify="center">
 
@@ -29,6 +31,7 @@ export default function Intro() {
         guaranteed in every aspect.
         </Text>
     </Container>
+    </article>
     </>
     );
 }

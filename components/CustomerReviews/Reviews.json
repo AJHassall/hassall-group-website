@@ -1,0 +1,66 @@
+[
+    {
+        "id": 0,
+        "author": "karla45088, Canvey Island",
+        "rating": 5,
+        "title": "very friendly",
+        "review": "Matthew was very friendly and job he did with replacing my 4 doors was out of this world. Will definitely get him and his work colleague back to do the other 5 doors. Thank you",
+        "date": "4 Mar 2024",
+        "source": "My Builder"
+    },
+    {
+        "id": 1,
+        "author": "sharon24743_65, Basildon",
+        "rating": 5,
+        "title": "no problems at all", 
+        "review": "The job was strengthening our staircase and replacing part of the flooring on our landing. Matthew was very quick at completing the job, no problems at all. We are more than happy with the completed job, floor is strong now and we would definately recommend him and wouldn’t hesitate to hire him again, he was punctual and efficient.",
+        "date": "24 Feb 2024",
+        "source": "My Builder"
+    },
+    {
+        "id": 2,
+        "author": "Customer of Hassall Group LTD",
+        "rating": 5,
+        "title": "reliable & trustworthy", 
+        "review": "Porch & shower room with hand basin & toilet. Matt Planned & carried out the work efficiently. He was reliable & trustworthy when left in the house on his own.",
+        "date": "8 Feb 2024",
+        "source":"My Builder"
+        
+    },
+    {
+        "id": 3,
+        "author": "kwasi64885, Basildon",
+        "rating": 5,
+        "title": "efficient and deligent", 
+        "review": "This guy is efficient and deligent with his job.Gave reasonable quote and perform job within 2 days .I can recommend him to anyone who needs ceiling done .",
+        "date": "17 Feb 2024",
+        "source":"My Builder"
+    },
+    {
+        "id": 4,
+        "author": "Graham Collisson",
+        "rating": 5,
+        "title": "gave us a usable and wonderful garden", 
+        "review": "Essex clay soil caused the garden to flood in the winter and go bone dry in the summer.  Hassall Group totally renovated the garden, added additional drainage and gave us a usable and wonderful garden",
+        "date": "May 2024",
+        "source": "Google reviews"
+    },
+    {
+        "id": 5,
+        "author": "Jordan biker",
+        "rating": 5,
+        "title": "reliable and reasonable builder", 
+        "review": "Used Mathew for multiple jobs, great reliable and reasonable builder im very pleased with all work carried out. Would highly recommend!",
+        "date": "May 2024",
+        "source": "Google reviews"
+    },
+    {
+        "id": 6,
+        "author": "Helena Stoud",
+        "rating": 5,
+        "title": "professional and friendly team.", 
+        "review": "Rear and front retaining walls built at my mother’s property by Hassall Group Ltd and delighted with the work. Fair and transparent pricing, arrive as arranged and leave property tidy. My mother has dementia and all the guys on site were courteous and patient with her when needed. Matt Hasall runs a tight ship and will take the time to ensure you are completely happy throughout the work and address any concerns. A welcome change in today’s climate find such a professional and friendly team.\n",
+        "date": "May 2024",
+        "source": "Google reviews"
+    }
+]
