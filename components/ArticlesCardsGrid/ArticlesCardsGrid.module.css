@@ -13,3 +13,7 @@
   font-family: 'Greycliff CF', var(--mantine-font-family);
   font-weight: bold;
 }
+
+.container{
+  background-image: linear-gradient(250deg, #3b4c77 0%, #0190b8 70%);
+}

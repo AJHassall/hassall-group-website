@@ -4,7 +4,7 @@ import classes from './Intro.module.css';
 export default function Intro() {
     return (
     <>
-    <Box w="100%" bg="charcoal">
+    <Box w="100%" bg="charcoal" mih={"100vh"}>
 
     <Container size="lg" py="xl" bg="charcoal" w="100%">
         <Group justify="center">

@@ -1,4 +1,4 @@
-import { SimpleGrid, Card, Image, Text, Container, AspectRatio } from '@mantine/core';
+import { SimpleGrid, Card, Image, Text, Container, AspectRatio, Box } from '@mantine/core';
 import Link from 'next/link';
 import classes from './ArticlesCardsGrid.module.css';
 
@@ -66,8 +66,11 @@ export function ArticlesCardsGrid() {
   ));
 
   return (
+    <Box  mih={"100vh"} w={"100%"} className={classes.container} p={'lg'}>
+
     <Container size="lg" w="100%">
       <SimpleGrid cols={{ base: 1, sm: 3 }}>{cards}</SimpleGrid>
     </Container>
+    </Box>
   );
 }

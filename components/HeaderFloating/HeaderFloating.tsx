@@ -21,7 +21,7 @@ import classes from './header.module.css';
 import { Logo } from '../Logo/Logo';
 import { ContactIconsList } from './ContactIcons';
 
-export function Header() {
+export function HeaderFloating() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
   const showHeader = !useHeadroom({ fixedAt: 120 });
 

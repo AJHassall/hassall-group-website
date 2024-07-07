@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: var(--mantine-spacing-md);
+}
+
+
+  @media only screen and (max-width: 768px) {
+  .contactIconsList { 
+      display: none  /* Hide grid on mobile */
+  }
+}
