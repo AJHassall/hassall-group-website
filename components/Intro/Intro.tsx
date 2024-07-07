@@ -1,12 +1,12 @@
-import { Text, Title, Group, Badge, Container } from '@mantine/core';
+import { Text, Title, Group, Badge, Container, Box } from '@mantine/core';
 import classes from './Intro.module.css';
 
 export default function Intro() {
     return (
     <>
-    <article>
+    <Box w="100%" bg="charcoal">
 
-    <Container size="lg" py="xl">
+    <Container size="lg" py="xl" bg="charcoal" w="100%">
         <Group justify="center">
 
             <Badge variant="filled" size="lg">
@@ -14,11 +14,11 @@ export default function Intro() {
             </Badge>
         </Group>
 
-        <Title order={2} className={classes.title} ta="center" mt="sm">
+        <Title order={2} className={classes.title} c="white" ta="center" mt="sm">
             Your Trusted Building Partner
         </Title>
 
-        <Text c="dimmed" className={classes.description} fz="lg" w="100%" ta="center" p="xl" mt="md">
+        <Text c="white" className={classes.description} fz="lg" w="100%" ta="center" p="xl" mt="md">
         Welcome to Hassall Group, a principal building and landscaping company.
         We cover all aspects of Extensions, Conversions, Bricklaying, Carpentry,
         Plastering, Groundworks
@@ -31,7 +31,7 @@ export default function Intro() {
         guaranteed in every aspect.
         </Text>
     </Container>
-    </article>
+    </Box>
     </>
     );
 }

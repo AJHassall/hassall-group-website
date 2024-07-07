@@ -24,6 +24,7 @@ export const themeOverride = createTheme({
     lightBlue: ['#0190b8', '#0190b8', '#0190b8', '#0190b8', '#0190b8', '#0190b8', '#0190b8', '#0190b8', '#0190b8', '#0190b8'],
     darkBlue: ['#3b4c77', '#3b4c77', '#3b4c77', '#3b4c77', '#3b4c77', '#3b4c77', '#3b4c77', '#3b4c77', '#3b4c77', '#3b4c77'],
     grey: ['#919fa4', '#919fa4', '#919fa4', '#919fa4', '#919fa4', '#919fa4', '#919fa4', '#919fa4', '#919fa4', '#919fa4'],
+    charcoal: ['36454F', '#36454F', '#36454F', '#36454F', '#36454F', '#36454F', '#36454F', '#36454F', '#36454F', '#36454F'],
   },
   fontFamily: roboto.style.fontFamily,
   fontFamilyMonospace: roboto.style.fontFamily,

@@ -13,24 +13,26 @@ import {
   Button,
   Text,
   Accordion,
+  Portal,
 } from '@mantine/core';
 import { IconChevronDown } from '@tabler/icons-react';
-import { useDisclosure } from '@mantine/hooks';
+import { useDisclosure, useHeadroom } from '@mantine/hooks';
 import classes from './header.module.css';
 import { Logo } from '../Logo/Logo';
 import { ContactIconsList } from './ContactIcons';
 
 export function Header() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
+  const showHeader = !useHeadroom({ fixedAt: 120 });
 
   return (
-    <Box>
-      <header className={classes.header}>
+    <>
+      <header className={`${classes.header} ${showHeader ? classes.fadein : classes.fadeout}`}>
 
         <Group justify="space-between" h="100%">
           <Link href="/" className={classes.link}>
             <div className={classes.logoContainer}>
-              <Logo size={256} />
+              <Logo size={200} />
             </div>
           </Link>
 
@@ -145,7 +147,6 @@ export function Header() {
 
         </ScrollArea>
       </Drawer>
-
-    </Box>
+    </>
   );
 }

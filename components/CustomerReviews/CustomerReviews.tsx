@@ -21,14 +21,14 @@ interface ReviewProps {
 function Review({ id, author, rating, title, review, date, source }: ReviewProps) {
   return (
 
-          <Card withBorder shadow="md" radius="md" className={classes.card} key={id}>
+          <Card withBorder shadow="md" radius="md" bg="charcoal" className={classes.card} key={id}>
             <Group>
               <div>
-                <Text fz="sm">{author}</Text>
+                <Text fz="sm" c="#fff">{author}</Text>
                 <Text fz="xs" c="dimmed">
                   {date}
                 </Text>
-                <Text fz="sm">
+                <Text fz="sm" c="#fff">
                   <IconQuote size={12} style={{ transform: 'rotate(180deg)' }} />{' '}
                   <i>{title}</i> <IconQuote size={12} />
                 </Text>
@@ -36,8 +36,8 @@ function Review({ id, author, rating, title, review, date, source }: ReviewProps
             </Group>
             <TypographyStylesProvider className={classes.body}>
               <div className={classes.content}>
-                <Text fs="xs" c="gray">
-                  <IconQuote size={12} style={{ transform: 'rotate(180deg)' }} /> {review} <IconQuote size={12} />
+                <Text fz="sm" c="#fff">
+                     {review}
                 </Text>
               </div>
               <div className={classes.lineAfter}>
@@ -74,7 +74,7 @@ export default function CustomerReviews() {
   ));
   const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
   return (
-    <Container size="lg">
+    <Container size="lg" fluid p="xl">
 
     <Carousel
       initialSlide={3}
