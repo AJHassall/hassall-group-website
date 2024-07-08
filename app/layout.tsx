@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <NextAppDirEmotionCacheProvider options={{ key: 'css' }}>
           <MantineProvider defaultColorScheme="light" theme={theme}>
               <HeaderFloating />
-              <HeaderStatic/>
+              <HeaderStatic />
               <Box component="main" bg="white">
                 {children}
               </Box>

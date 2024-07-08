@@ -74,7 +74,7 @@ export default function CustomerReviews() {
   ));
   const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
   return (
-    <Container size="lg" fluid p="xl">
+    <Container size="md" p="xl">
 
     <Carousel
       initialSlide={3}

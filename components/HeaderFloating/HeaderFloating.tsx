@@ -4,7 +4,6 @@ import Link from 'next/link';
 import {
   Group,
   Divider,
-  Box,
   Burger,
   Drawer,
   ScrollArea,
@@ -13,7 +12,6 @@ import {
   Button,
   Text,
   Accordion,
-  Portal,
 } from '@mantine/core';
 import { IconChevronDown } from '@tabler/icons-react';
 import { useDisclosure, useHeadroom } from '@mantine/hooks';

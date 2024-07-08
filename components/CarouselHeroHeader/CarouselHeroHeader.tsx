@@ -1,29 +1,13 @@
 'use client';
 
-import { Button, Container, Title, Text, em, Image } from '@mantine/core';
-import { useMediaQuery } from '@mantine/hooks';
-import Link from 'next/link';
+import { Button, Container, Title, Text } from '@mantine/core';
 import classes from './CarouselHeroHeader.module.css';
 
-import landscaping from '@/public/content/landscaping/landscaping (15).webp';
-import conversion from '@/public/content/conversions/conversions (9).webp';
-import porch from '@/public/content/porches/porch.webp';
-import kitchen from '@/public/content/kitchenrenovations/kitchen_renovation (8).webp';
-import bathroom from '@/public/content/bathrooms/Bathroom (8).webp';
-import { Carousel } from '@mantine/carousel';
-
-const images = [
-        landscaping.src,
-        conversion.src,
-        porch.src,
-        kitchen.src,
-        bathroom.src,
-    ];
+import { Wave } from '../Wave/wave';
 
     export function CarouselHeroHeader() {
-      const isMobile = useMediaQuery('(min-width: 750px)');
       return (
-        <div className={classes.root}>
+        <section className={classes.root} style={{ position: 'relative' }}>
           <Container size="lg">
             <div className={classes.inner}>
               <div className={classes.content}>
@@ -36,12 +20,11 @@ const images = [
                     inherit
                     variant="gradient"
                     gradient={{ from: 'yellow', to: 'pink' }}
-                    >
+                  >
                     Hassall Group Ltd
                   </Text>{' '}
                 </Title>
 
-                  
                   <Text className={classes.description} mt={20} fz="lg" c="white">
                     Welcome to Hassall Group, a principal building and landscaping company.
                     We cover all aspects of Extensions, Conversions, Bricklaying, Carpentry,
@@ -63,17 +46,18 @@ const images = [
                   size="xl"
                   className={classes.control}
                   mt={40}
-                  >
+                >
                   Contact
                 </Button>
-                <div>
-              </div>
-              </div>
-              <div className={classes.right}>
-              </div>
+                <div />
+                </div>
+              <div className={classes.right} />
               </div>
             </div>
           </Container>
-        </div>
+
+          <Wave colour="#36454F" />
+
+        </section>
       );
     }

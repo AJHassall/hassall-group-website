@@ -27,6 +27,7 @@
     .desktopImageViewer { 
         display: none  /* Hide grid on mobile */
     }
+    
     .mobileImageViewer{
       display: inline;
     }

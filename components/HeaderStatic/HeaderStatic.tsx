@@ -4,7 +4,6 @@ import Link from 'next/link';
 import {
   Group,
   Divider,
-  Box,
   Burger,
   Drawer,
   ScrollArea,
@@ -13,10 +12,9 @@ import {
   Button,
   Text,
   Accordion,
-  Portal,
 } from '@mantine/core';
 import { IconChevronDown } from '@tabler/icons-react';
-import { useDisclosure, useHeadroom } from '@mantine/hooks';
+import { useDisclosure } from '@mantine/hooks';
 import classes from './header.module.css';
 import { Logo } from '../Logo/Logo';
 import { ContactIconsList } from './ContactIcons';
