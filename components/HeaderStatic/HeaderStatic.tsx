@@ -4,7 +4,6 @@ import Link from 'next/link';
 import {
   Group,
   Divider,
-  Box,
   Burger,
   Drawer,
   ScrollArea,
@@ -20,57 +19,62 @@ import classes from './header.module.css';
 import { Logo } from '../Logo/Logo';
 import { ContactIconsList } from './ContactIcons';
 
-export function Header() {
+export function HeaderStatic() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
-
   return (
-    <Box>
-      <header className={classes.header}>
+    <>
+      <header className={`${classes.header}`}>
 
         <Group justify="space-between" h="100%">
           <Link href="/" className={classes.link}>
             <div className={classes.logoContainer}>
-              <Logo size={256} />
+              <Logo size={200} />
             </div>
           </Link>
 
           <Group justify="flex-end" h="100%" gap={0} visibleFrom="sm">
+            <Link className={classes.link} href="/About">
+              <Text>About</Text>
+            </Link>
+            <Link className={classes.link} href="/Reviews">
+              <Text>Reviews</Text>
+            </Link>
             <Menu>
               <Menu.Target>
-                <Button color="#0190b8" fz="lg">Our Services <IconChevronDown /></Button>
+                <Button color="#0190b8" fz="md">Our Services <IconChevronDown /></Button>
               </Menu.Target>
               <Menu.Dropdown>
-                <Menu.Item>
+                <Menu.Item h={rem(30)} p={0}>
                   <Link href="/services/kitchenrenovations" className={classes.link}>
                   Kitchen Renovations
                   </Link>
                 </Menu.Item>
-                <Menu.Item>
+                <Menu.Item h={rem(30)} p={0}>
                   <Link href="/services/conversions" className={classes.link}>
                   Conversions
                   </Link>
                 </Menu.Item>
-                <Menu.Item>
+                <Menu.Item h={rem(30)} p={0}>
                   <Link href="/services/fencing" className={classes.link}>
                   Fencing
                   </Link>
                 </Menu.Item>
-                <Menu.Item>
+                <Menu.Item h={rem(30)} p={0}>
                   <Link href="/services/landscaping" className={classes.link}>
                   Landscaping
                   </Link>
                 </Menu.Item>
-                <Menu.Item>
+                <Menu.Item h={rem(30)} p={0}>
                   <Link href="/services/kitchenrenovations" className={classes.link}>
                   Kitchens
                   </Link>
                 </Menu.Item>
-                <Menu.Item>
+                <Menu.Item h={rem(30)} p={0}>
                 <Link href="/services/carpentryandjoinery" className={classes.link}>
                   Carpentry And Joinery
                 </Link>
                 </Menu.Item>
-                <Menu.Item>
+                <Menu.Item h={rem(30)} p={0}>
                 <Link href="/services/bathrooms" className={classes.link}>
                   Bathrooms
                 </Link>
@@ -139,7 +143,6 @@ export function Header() {
 
         </ScrollArea>
       </Drawer>
-
-    </Box>
+    </>
   );
 }

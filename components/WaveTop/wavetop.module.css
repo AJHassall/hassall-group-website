@@ -1,0 +1,27 @@
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(145% + 1.3px);
+  height: 27px;
+}
+
+.wave .shape-fill {
+  fill: #FF4242;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .wave svg {
+      width: calc(174% + 1.3px);
+      height: 72px;
+  }
+}

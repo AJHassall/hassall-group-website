@@ -1,5 +1,8 @@
-import { SimpleGrid, Card, Image, Text, Container, AspectRatio } from '@mantine/core';
-import Link from 'next/link';
+'use client';
+
+import { Carousel } from '@mantine/carousel';
+import { useMediaQuery } from '@mantine/hooks';
+import { Paper, Text, Title, Button, useMantineTheme, rem, Box, Container } from '@mantine/core';
 import classes from './ArticlesCardsGrid.module.css';
 
 import conversions from '@/public/content/conversions/conversions (9).webp';
@@ -8,66 +11,113 @@ import kitchen from '@/public/content/kitchenrenovations/kitchen_renovation (1).
 import fencing from '@/public/content/fencing/Fencing (1).webp';
 import landscaping from '@/public/content/landscaping/landscaping (9).webp';
 import bathroom from '@/public/content/bathrooms/Bathroom (8).webp';
+import { Wave } from '../Wave/wave';
+import { WaveTop } from '../WaveTop/wavetop';
 
-const mockdata = [
+interface CardProps {
+  image: any;
+  title: string;
+  category: string;
+}
+
+function Card({ image, title, category }: CardProps) {
+  return (
+    <Paper
+      shadow="md"
+      p="xl"
+      radius="md"
+      style={{ backgroundImage: `url('${image}')` }}
+      className={classes.card}
+    >      <div>
+        <Text className={classes.category} size="xs">
+          {category}
+        </Text>
+        <Title order={3} className={classes.title}>
+          {title}
+        </Title>
+           </div>
+      <Button variant="white" color="dark">
+        Read article
+      </Button>
+    </Paper>
+  );
+}
+
+const data = [
   {
-    title: 'Conversions',
-    href: 'services/conversions',
-    image: conversions.src,
-    date: 'August 18, 2022',
-  },
-  {
-    title: 'Carpentry and Joinery',
-    href: 'services/carpentryandjoinery',
-    image: extension.src,
-    date: 'August 27, 2022',
-  },
-  {
-    title: 'Kitchen renovation',
-    href: 'services/kitchenrenovations',
     image: kitchen.src,
-    date: 'September 9, 2022',
+    title: 'Kitchen renovations',
+    category: 'kitchen',
   },
   {
-    title: 'Fencing',
-    href: 'services/fencing',
-    image: fencing.src,
-    date: 'September 12, 2022',
+    image: extension.src,
+      title: 'Extensions',
+    category: '',
   },
   {
-    title: 'Landscaping',
-    href: 'services/landscaping',
+    image:
+      conversions.src,
+      title: 'Conversions',
+    category: 'nature',
+  },
+  {
     image: landscaping.src,
-    date: 'September 12, 2022',
-
+        title: 'Landscaping',
+    category: 'Landscaping',
   },
   {
-    title: 'Bathrooms',
-    href: 'services/bathrooms',
+    image: fencing.src,
+    title: 'Fencing',
+    category: 'tourism',
+  },
+  {
     image: bathroom.src,
-    date: 'September 12, 2022',
+    title: 'Bathrooms',
+    category: 'bathrooms',
   },
 ];
 
 export function ArticlesCardsGrid() {
-  const cards = mockdata.map((article) => (
-
-    <Link href={article.href} className={classes.link} key={article.title}>
-      <Card key={article.title} p="md" radius="md" shadow="md" className={classes.card}>
-        <AspectRatio ratio={1920 / 1080}>
-          <Image src={article.image} />
-        </AspectRatio>
-
-        <Text className={classes.title} mt={5}>
-          {article.title}
-        </Text>
-      </Card>
-    </Link>
+  const theme = useMantineTheme();
+  const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
+  const slides = data.map((item) => (
+    <Carousel.Slide key={item.title}>
+      <Card {...item} />
+    </Carousel.Slide>
   ));
 
   return (
-    <Container size="lg" w="100%">
-      <SimpleGrid cols={{ base: 1, sm: 3 }}>{cards}</SimpleGrid>
-    </Container>
+    <section style={{ position: 'relative' }}>
+    <WaveTop colour="#36454F" />
+    <Box
+      mih="100vh"
+      p={mobile ? 'md' : 'xl'}
+      pt="10rem"
+      pb="10rem"
+      style={{ backgroundImage: 'linear-gradient(250deg, #3b4c77 0%, #0190b8 70%)',
+      }}
+    >
+      <Text c="white" className={classes.description} fz="md" w="100%" ta="center" p="xl" mt="md">
+          At Hassall Group Ltd., we&apos;re committed to exceeding client expectations.
+           See what our satisfied customers are saying about their experience working with us.
+            Their testimonials can help you decide if Hassall Group is
+             the right builder for your next project.
+      </Text>
+
+      <Container size="lg" p="xl">
+      <Carousel
+        loop
+        slideSize={{ base: '100%', sm: '33%' }}
+        slideGap={{ base: rem(2), sm: 'xl' }}
+        align="start"
+        slidesToScroll={mobile ? 1 : 2}
+      >
+        {slides}
+      </Carousel>
+      </Container>
+    </Box>
+    <Wave colour="#fff" />
+
+    </section>
   );
 }

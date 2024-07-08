@@ -16,7 +16,7 @@ export default withBundleAnalyzer({
     ignoreDuringBuilds: false,
   },
   experimental: {
-    optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
+    //optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
   },
   output: 'export',
   assetPrefix: pathPrefix,

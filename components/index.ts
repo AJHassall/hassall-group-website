@@ -16,8 +16,6 @@ export { FooterSimple } from './FooterSimple/FooterSimple';
 export { GridAsymmetrical } from './GridAsymmetrical/GridAsymmetrical';
 
 //
-export { HeaderSimple } from './HeaderSimple/HeaderSimple';
-
 export { CarouselHeroHeader } from './CarouselHeroHeader/CarouselHeroHeader';
 
 export { ArticlesCardsGrid } from './ArticlesCardsGrid/ArticlesCardsGrid';
