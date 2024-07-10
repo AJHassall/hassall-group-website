@@ -4,6 +4,9 @@ const pathPrefix = process.env.NODE_ENV === 'ghpages'
   ? '/hassall-group-website'
   : '';
 
+const assetPrefix = process.env.NODE_ENV === 'ghpages'
+  ? 'https://ajhassall.github.io/hassall-group-website/'
+  : '';
 const BASE_URL  = 'http://127.0.0.1:3000';
 
 const withBundleAnalyzer = bundleAnalyzer({
@@ -19,7 +22,7 @@ export default withBundleAnalyzer({
     //optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
   },
   output: 'export',
-  assetPrefix: pathPrefix,
+  assetPrefix: assetPrefix,
   basePath: pathPrefix,
   images: { loader: 'akamai', path: '' },
   env: {
