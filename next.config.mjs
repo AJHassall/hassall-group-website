@@ -24,7 +24,7 @@ export default withBundleAnalyzer({
   output: 'export',
   assetPrefix: assetPrefix,
   basePath: pathPrefix,
-  images: { loader: 'akamai', path: '' },
+  images: { loader: 'akamai', path: 'hassall-group-website/' },
   env: {
     pathPrefix,
     BASE_URL,
