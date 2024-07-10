@@ -20,7 +20,6 @@ export default withBundleAnalyzer({
   },
   output: 'export',
   assetPrefix: "./",
-  basePath: "./",
   images: { loader: "akamai", path: "" },
   env: {
     pathPrefix,
