@@ -19,8 +19,9 @@ export default withBundleAnalyzer({
     //optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
   },
   output: 'export',
-  assetPrefix: "./",
-  images: { loader: "akamai", path: "" },
+  assetPrefix: pathPrefix,
+  basePath: pathPrefix,
+  images: { loader: 'akamai', path: '' },
   env: {
     pathPrefix,
     BASE_URL,

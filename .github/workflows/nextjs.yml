@@ -55,6 +55,8 @@ jobs:
           
       - name: Extract repository name
         run: echo "BASE_PATH=/$(echo $GITHUB_REPOSITORY | cut -d '/' -f 2)" >> $GITHUB_ENV
+             echo NODE_ENV="ghpages" >> .env
+
         
       - name: Setup Node
         uses: actions/setup-node@v3
