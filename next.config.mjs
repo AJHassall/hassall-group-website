@@ -7,9 +7,6 @@ const pathPrefix = process.env.NODE_ENV === 'ghpages'
 const assetPrefix = process.env.NODE_ENV === 'ghpages'
   ? '/hassall-group-website'
   : '';
-const images = process.env.NODE_ENV === 'ghpages'
-  ? {unoptimised: true}
-  : {};
 const BASE_URL  = 'http://127.0.0.1:3000';
 
 const withBundleAnalyzer = bundleAnalyzer({
@@ -27,7 +24,7 @@ export default withBundleAnalyzer({
   output: 'export',
   assetPrefix: assetPrefix,
   basePath: pathPrefix,
-  images: { loader: 'akamai', ...images },
+  images: { loader: 'akamai'},
   env: {
     pathPrefix,
     BASE_URL,
