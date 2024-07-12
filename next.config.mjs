@@ -8,7 +8,7 @@ const assetPrefix = process.env.NODE_ENV === 'ghpages'
   ? '/hassall-group-website'
   : '';
 const images = process.env.NODE_ENV === 'ghpages'
-  ? {unoptimised}
+  ? {unoptimised: true}
   : {};
 const BASE_URL  = 'http://127.0.0.1:3000';
 
