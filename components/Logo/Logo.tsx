@@ -1,5 +1,6 @@
 import { ImageProps } from '@mantine/core';
 import Image from 'next/image';
+import prefix from '@/app/prefix';
 
 interface LogoProps extends ImageProps { // Extend Mantine's ImageProps
   size: number;
@@ -8,7 +9,7 @@ interface LogoProps extends ImageProps { // Extend Mantine's ImageProps
 export function Logo({ size }: LogoProps) {
   return (
     <Image
-      src="/hassall90x50 no background.png"
+      src={`${prefix}/hassall90x50 no background.png`}
       //fit="contain"
       width={size}
       height={(size / 90) * 50}

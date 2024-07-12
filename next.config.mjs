@@ -1,12 +1,13 @@
 import bundleAnalyzer from '@next/bundle-analyzer';
 
-const pathPrefix = process.env.NODE_ENV === 'ghpages'
+const pathPrefix = process.env.NODE_ENV === 'production'
   ? '/hassall-group-website'
   : '';
 
-const assetPrefix = process.env.NODE_ENV === 'ghpages'
-  ? '/hassall-group-website'
+const assetPrefix = process.env.NODE_ENV === 'production'
+  ? '/hassall-group-website/'
   : '';
+
 const BASE_URL  = 'http://127.0.0.1:3000';
 
 const withBundleAnalyzer = bundleAnalyzer({

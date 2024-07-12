@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Image } from '@mantine/core';
+import prefix from '@/app/prefix';
 
 interface ProjectCardProps {
   imageSrc: string;
@@ -20,7 +21,7 @@ function ProjectCard({ imageSrc, caption, additionalImages }: ProjectCardProps) 
 
   return (
     <div className="project-card">
-      <Image src={imageSrc} alt={caption} onClick={openModal} />
+      <Image src={`${prefix}${imageSrc}`} alt={caption} onClick={openModal} />
       <p>{caption}</p>
 
       {isModalOpen && (
@@ -30,7 +31,7 @@ function ProjectCard({ imageSrc, caption, additionalImages }: ProjectCardProps) 
           </button>
           <div className="modal-content">
             {additionalImages.map((imgSrc, index) => (
-              <Image key={index} src={imgSrc} alt={`Project ${index}`} />
+              <Image key={index} src={`${prefix}${imgSrc}`} alt={`Project ${index}`} />
             ))}
           </div>
         </div>

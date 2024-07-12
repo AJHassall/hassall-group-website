@@ -1,5 +1,6 @@
 import { Image, Container, Text } from '@mantine/core';
 import pops from '@/public/content/TheFounderOfTheFounder.webp';
+import prefix from '../prefix';
 
 export default function About() {
   return (
@@ -12,7 +13,7 @@ export default function About() {
         </Text>
       </div>
         <Image
-          src={pops.src}
+          src={`${prefix}${pops.src}`}
           //p="lg"
           alt="The Founder of the Founder"
           width={800}

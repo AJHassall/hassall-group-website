@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { Image, Container, Title, Text, Stack, SimpleGrid, Modal } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import classes from './styles.module.css';
+import prefix from '@/app/prefix';
 
 interface ImageData {
     src: string;
@@ -28,7 +29,7 @@ interface ImageData {
       <Modal opened={opened} onClose={close} centered size="85%">
       { selectedImage ?
         (<Image
-          src={selectedImage.src}
+          src={`${prefix}${selectedImage.src}`}
           alt={selectedImage.alt}
           height="700"
           width="auto"
