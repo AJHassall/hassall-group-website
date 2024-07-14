@@ -8,6 +8,10 @@ const assetPrefix = process.env.NODE_ENV === 'production'
   ? '/hassall-group-website/'
   : '';
 
+const images = process.env.NODE_ENV === 'production'
+  ? {unoptimized: true}
+  : {};
+
 const BASE_URL  = 'http://127.0.0.1:3000';
 
 const withBundleAnalyzer = bundleAnalyzer({
@@ -29,5 +33,7 @@ export default withBundleAnalyzer({
     pathPrefix,
     BASE_URL,
   },
+
+  images: images,
   
 });
