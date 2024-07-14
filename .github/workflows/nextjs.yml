@@ -81,7 +81,7 @@ jobs:
         run: |
           ${{ steps.detect-package-manager.outputs.runner }} next build
         env: 
-          NODE_ENV: ghpages
+          NODE_ENV: production
         
       - name: Fix permissions
         run: |
